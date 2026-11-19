@@ -2,6 +2,14 @@
     "name": "moms-website",
     "main": "worker/index.ts",
     "compatibility_date": "2026-11-01",
+    // The site is served only at prevenvar.com (and www). Kept here, not just in
+    // the dashboard, so every deploy from GitHub keeps the same setup.
+    "workers_dev": false,
+    "preview_urls": false,
+    "routes": [
+        { "pattern": "prevenvar.com", "custom_domain": true },
+        { "pattern": "www.prevenvar.com", "custom_domain": true }
+    ],
     "assets": {
         "not_found_handling": "single-page-application",
         "run_worker_first": [
