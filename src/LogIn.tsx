@@ -92,6 +92,9 @@ function LogIn() {
                         </label>
                     </div>
                     {errors.form && <p className="text-sm text-red-600">{errors.form}</p>}
+                    <button type="button" onClick={() => navigate('/recuperar')} className="text-sm text-blue-800 hover:underline">
+                        ¿Olvidaste tu contraseña?
+                    </button>
                     <div className="flex flex-row">
                         <div className="p-5">
                             <button className={btn_style} type="submit" disabled={submitting}>Iniciar Sesion</button>

@@ -103,11 +103,43 @@ async function login(request: Request, env: Env) {
     )
 }
 
+/**
+ * POST /api/reset-password { firstName, lastName, email, codigo, password }
+ * "Forgot password" without email: the user proves who they are by repeating
+ * the name, last name and code they registered with (case-insensitive).
+ * ONE D1 call: the UPDATE only matches when every field matches, and the same
+ * batch logs the user out everywhere when it did. A mismatch gives the same
+ * answer whichever field was wrong, so it doesn't reveal which emails exist.
+ */
+async function resetPassword(request: Request, env: Env) {
+    const creds = await readCredentials(request)
+    if (!creds) return Response.json({ error: 'Solicitud inválida.' }, { status: 400 })
+
+    const error = validateFirstName(creds.firstName) || validateLastName(creds.lastName)
+        || validateEmail(creds.email) || validateCodigo(creds.codigo) || validatePassword(creds.password)
+    if (error) return Response.json({ error }, { status: 400 })
+
+    const passwordHash = await hashPassword(creds.password)
+    const [update] = await env.DB.batch([
+        env.DB.prepare(`UPDATE users SET password_hash = ?
+                        WHERE email = ? AND first_name = ? COLLATE NOCASE
+                          AND last_name = ? COLLATE NOCASE AND codigo = ? COLLATE NOCASE`)
+            .bind(passwordHash, creds.email, creds.firstName, creds.lastName, creds.codigo),
+        env.DB.prepare('DELETE FROM sessions WHERE changes() = 1 AND user_id = (SELECT id FROM users WHERE email = ?)')
+            .bind(creds.email),
+    ])
+    if (update.meta.changes !== 1) {
+        return Response.json({ error: 'Los datos no coinciden con ninguna cuenta.' }, { status: 400 })
+    }
+    return Response.json({ ok: true })
+}
+
 // D1 calls per request (keep these as low as possible when adding endpoints):
 //   POST /api/register  1  (user + session in one batch, no reads)
 //   POST /api/login     2  (read hash, then one batch: session + progress)
 //   GET  /api/me        1  (email + all progress), or 0 without a valid-looking cookie
 //   POST /api/progress  1  (session check is a subquery in the write), 0 on bad input
+//   POST /api/reset-password 1  (update + log out everywhere, one batch), 0 on bad input
 //   POST /api/logout    1, or 0 without a valid-looking cookie
 //   POST /api/evaluations 1  (attempt + "done" if passed, one batch), 0 on bad input
 //   bad input / bad JSON / failed validation: 0
@@ -125,6 +157,10 @@ export default {
 
         if (url.pathname === '/api/login' && request.method === 'POST') {
             return login(request, env)
+        }
+
+        if (url.pathname === '/api/reset-password' && request.method === 'POST') {
+            return resetPassword(request, env)
         }
 
         if (url.pathname === '/api/logout' && request.method === 'POST') {

@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import Layout from '/src/layouts/Layout.tsx'
 import LogIn from '/src/LogIn.tsx'
 import Register from '/src/Register.tsx'
+import RecuperarContrasena from '/src/RecuperarContrasena.tsx'
 import Home from '/src/Home.tsx'
 import SectionPage from '/src/pages/SectionPage.tsx'
 import SubsectionPage from '/src/pages/SubsectionPage.tsx'
@@ -16,6 +17,7 @@ function App() {
         <Routes>
             <Route path="/" element={<LogIn />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/recuperar" element={<RecuperarContrasena />} />
 
             {/* Everything inside here needs a logged-in user and shows the sidebar. */}
             <Route element={<Layout />}>
