@@ -23,7 +23,7 @@ function Overview() {
     return (
         <>
             <h3><strong>Duracion Total:</strong> 10 Horas</h3>
-            <VideoBase src="https://drive.google.com/file/d/19nBVyxDy0Y3qgpYIs4qFK6dgMjN93-wm/preview" title="Intro to modulo 1" />
+            <VideoBase src="https://www.youtube.com/embed/Pj2uzG2cUP4?si=8iTmAC_gNy_6K898" title="Intro to modulo 1" />
         </>
 
     )
@@ -38,7 +38,7 @@ function Unidad1() {
             {/* ---------- 1.1 ---------- */}
             <section className="mb-12">
 
-                <VideoBase src="https://drive.google.com/file/d/1QZ_G3pttwuiVjBN3dIoYCXCNYURb1kgo/preview" title="Derechos Laborales de Mujeres y Hombre" />
+                <VideoBase src="https://www.youtube.com/embed/l3BRNl92inw?si=gw1G_1eHMqxb3IPn" title="Derechos Laborales de Mujeres y Hombre" />
                 <br />
                 <h1 className="text-2xl mb-4">
                     <strong>1.1 INTRODUCCIÓN A LOS DERECHOS LABORALES </strong>
@@ -526,7 +526,7 @@ function Unidad2() {
                         <strong>🎥 Video: Discriminación por la edad </strong>
                     </h3>
                     <div className="pl-4">
-                        <VideoBase src="https://drive.google.com/file/d/1MMKW33QbLpStGMxzTPqZJgfOe3bEvdDL/preview" title="Discriminación por la edad" />
+                        <VideoBase src="https://www.youtube.com/embed/H2oOuE1_8OE?si=8Hv3tkekhR26Ipjk" title="Discriminación por la edad" />
                     </div>
                 </div>
             </section>
@@ -792,7 +792,7 @@ function Unidad3() {
                     </h3>
                     <div className="pl-4 space-y-2">
                         <p>Derechos laborales en Ecuador</p>
-                        <VideoBase src="https://drive.google.com/file/d/1rzAOfP53WrIFUwFHh-Hy5InKYuPCp_k_/preview" title="Derechos laborales en Ecuador" />
+                        <VideoBase src="https://www.youtube.com/embed/VYzthN68gdM?si=3TIBuyCCS6ghRg9S" title="Derechos laborales en Ecuador" />
                     </div>
                 </div>
             </section>
@@ -1061,7 +1061,7 @@ function Unidad4() {
                         </a>
                     </p>
 
-                    <VideoBase src="https://drive.google.com/file/d/1K1JdxX1lSt7-TLvgZwDXnkgNckFDdwZe/preview" title='Trabajo Digno y Decente' />
+                    <VideoBase src="https://www.youtube.com/embed/TMKIB3--MsU?si=g9Q33hUQz40qgtW6" title='Trabajo Digno y Decente' />
                 </div>
             </section>
         </>
@@ -1222,7 +1222,7 @@ function Unidad5() {
                         </a>
                     </p>
 
-                    <VideoBase src="https://drive.google.com/file/d/1rzAOfP53WrIFUwFHh-Hy5InKYuPCp_k_/preview" title="Módulo 1: Derechos Laborales de Mujeres y Hombres" />
+                    <VideoBase src="https://www.youtube.com/embed/a8hEhhNLe3M?si=0W4dGef1cM5gezyO" title="Módulo 1: Derechos Laborales de Mujeres y Hombres" />
                 </div>
             </section>
         </>
@@ -1346,7 +1346,7 @@ function Unidad6() {
                         Permiso de paternidad y maternidad en Ecuador 2026: cuántos días son
                     </p>
 
-                    <VideoBase src="https://drive.google.com/file/d/1gA_Qu8ypTKwdJsmr_H5inBPy2H7qtfSV/preview" title="Permiso de paternidad y maternidad en Ecuador 2026: cuántos días son" />
+                    <VideoBase src="https://www.youtube.com/embed/ySScwrTRzkE?si=Z0jkgUPVGMCfe08A" title="Permiso de paternidad y maternidad en Ecuador 2026: cuántos días son" />
                 </div>
             </section>
         </>

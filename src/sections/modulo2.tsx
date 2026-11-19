@@ -13,7 +13,7 @@ function Overview() {
     return (
         <>
             <h3><strong>Duracion Total:</strong> 10 Horas</h3>
-            <VideoBase src="https://drive.google.com/file/d/11tF3UFxWbGNLdmYtGvUPfNPRPZPO4eu2/preview" title="Intro to modulo 2" />
+            <VideoBase src="https://www.youtube.com/embed/e8jFZGnVkHw?si=bUH-oa5RR00_BzmG" title="Intro to modulo 2" />
             <h3>
                 <strong>Objetivo Del Modulo </strong>
 

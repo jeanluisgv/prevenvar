@@ -25,7 +25,7 @@ function Bienvenida() {
 
 
             </p>
-            <iframe src="https://drive.google.com/file/d/1grs2TOBfDfGt15WpuGmsxayQdISoHKMf/preview" className="w-full aspect-video rounded-lg"></iframe>
+            <iframe src="https://www.youtube.com/embed/W7B2akoBS4U?si=REK6EBV6Ts2KC5IJ" className="w-full aspect-video rounded-lg"></iframe>
 
             <a
                 href="https://drive.google.com/file/d/1x1yFlHvgZKZjT1c_88fEIT4lqkN2U8qQ/preview"
