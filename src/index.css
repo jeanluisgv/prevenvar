@@ -1,0 +1,101 @@
+/**
+ * Ecuatech Frontend - index.css
+ * -----------------------------
+ * Purpose: Global styles and Tailwind directives
+ *
+ * Why: Tailwind needs to inject its base, component, and utility styles
+ *
+ * What it does:
+ * - @tailwind base: Reset and base styles
+ * - @tailwind components: Component classes
+ * - @tailwind utilities: Utility classes (flex, grid, spacing, etc.)
+ */
+
+@import "tailwindcss";
+
+
+
+.logo {
+    height: 125px;
+    width: auto;
+
+}
+
+
+/*main container of something*/
+.home-container {
+    position: relative;
+    min-height: 50vh;
+    width: 100%;
+}
+
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* fixed height, adjust as needed 256px*/
+    object-fit: cover;
+    object-position: center;
+    /* or center, bottom */
+    user-select: none;
+}
+
+.hero-content {
+    position: relative;
+    /* that's all it needs to sit above the img */
+    text-align: left;
+    vertical-align: auto;
+    color: #fff;
+    padding: 0 1rem;
+}
+
+.hero-scrim {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    /* or a gradient: linear-gradient(...) */
+}
+
+
+
+/* Actually moves the content in from the left.*/
+@keyframes pop-in-left {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Applies pop in left for both header and paragraph + time of animation */
+.hero-content h1,
+.hero-content p {
+    animation: pop-in-left 0.6s ease-out both;
+}
+
+/* stagger: heading first, then the paragraph */
+.hero-content h1 {
+    animation-delay: 0.1s;
+}
+
+.hero-content p {
+    animation-delay: 0.3s;
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+
+    .hero-content h1,
+    .hero-content p,
+    .hero-content span {
+        animation: none;
+    }
+}

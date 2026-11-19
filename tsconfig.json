@@ -1,0 +1,20 @@
+{
+    // Type settings for the frontend (src/). The worker has its own: worker/tsconfig.json.
+    // Check with: npx tsc -p .
+    "compilerOptions": {
+        "target": "es2022",
+        "lib": ["es2022", "dom", "dom.iterable"],
+        "module": "esnext",
+        "moduleResolution": "bundler",
+        "jsx": "react-jsx",
+        "strict": true,
+        "noEmit": true,
+        "skipLibCheck": true,
+        "allowImportingTsExtensions": true,
+        "forceConsistentCasingInFileNames": true,
+        "types": ["vite/client"],
+        // Lets imports like '/src/App.tsx' resolve the same way Vite does.
+        "paths": { "/src/*": ["./src/*"] }
+    },
+    "include": ["src"]
+}

@@ -1,0 +1,20 @@
+# Dependencies (Cloudflare runs `npm ci` from package-lock.json)
+node_modules/
+
+# Build output (Cloudflare builds it itself with `npm run build`)
+dist/
+
+# Local Wrangler state (local D1 database, deploy redirect)
+.wrangler/
+
+NOTES.md
+
+# Secrets: never commit. Set them in the Cloudflare dashboard instead
+# (Worker → Settings → Variables and Secrets).
+.dev.vars
+.dev.vars.*
+.env
+.env.*
+
+.DS_Store
+*.log
