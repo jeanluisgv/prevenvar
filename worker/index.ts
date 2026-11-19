@@ -104,12 +104,23 @@ async function login(request: Request, env: Env) {
 }
 
 /**
+ * How names and codes are compared in password recovery: Unicode-aware
+ * lowercase (Spanish rules, so É/Ñ/Ú count too, unlike SQLite's NOCASE),
+ * trimmed, repeated spaces collapsed, and composed the same way (NFC), so
+ * "  JOSÉ  " matches "José". Only used to compare: the stored values keep
+ * their original capitals for the certificate.
+ */
+const normalize = (s: string) => s.normalize('NFC').trim().replace(/\s+/g, ' ').toLocaleLowerCase('es')
+
+/**
  * POST /api/reset-password { firstName, lastName, email, codigo, password }
  * "Forgot password" without email: the user proves who they are by repeating
- * the name, last name and code they registered with (case-insensitive).
- * ONE D1 call: the UPDATE only matches when every field matches, and the same
- * batch logs the user out everywhere when it did. A mismatch gives the same
- * answer whichever field was wrong, so it doesn't reveal which emails exist.
+ * the name, last name and code they registered with (see `normalize`).
+ * A mismatch gives the same answer whichever field was wrong, so it doesn't
+ * reveal which emails exist.
+ * D1: 1 call on a mismatch (read by email), 2 on success (read, then one batch
+ * that sets the new hash and logs the user out everywhere). Two calls because
+ * SQLite can't lowercase accented letters, so the comparison happens here.
  */
 async function resetPassword(request: Request, env: Env) {
     const creds = await readCredentials(request)
@@ -119,18 +130,24 @@ async function resetPassword(request: Request, env: Env) {
         || validateEmail(creds.email) || validateCodigo(creds.codigo) || validatePassword(creds.password)
     if (error) return Response.json({ error }, { status: 400 })
 
-    const passwordHash = await hashPassword(creds.password)
-    const [update] = await env.DB.batch([
-        env.DB.prepare(`UPDATE users SET password_hash = ?
-                        WHERE email = ? AND first_name = ? COLLATE NOCASE
-                          AND last_name = ? COLLATE NOCASE AND codigo = ? COLLATE NOCASE`)
-            .bind(passwordHash, creds.email, creds.firstName, creds.lastName, creds.codigo),
-        env.DB.prepare('DELETE FROM sessions WHERE changes() = 1 AND user_id = (SELECT id FROM users WHERE email = ?)')
-            .bind(creds.email),
-    ])
-    if (update.meta.changes !== 1) {
+    const user = await env.DB
+        .prepare('SELECT id, first_name, last_name, codigo FROM users WHERE email = ? LIMIT 1')
+        .bind(creds.email)
+        .first<{ id: number, first_name: string, last_name: string, codigo: string }>()
+
+    const matches = user !== null
+        && normalize(user.first_name) === normalize(creds.firstName)
+        && normalize(user.last_name) === normalize(creds.lastName)
+        && normalize(user.codigo) === normalize(creds.codigo)
+    if (!matches) {
         return Response.json({ error: 'Los datos no coinciden con ninguna cuenta.' }, { status: 400 })
     }
+
+    const passwordHash = await hashPassword(creds.password)
+    await env.DB.batch([
+        env.DB.prepare('UPDATE users SET password_hash = ? WHERE id = ?').bind(passwordHash, user.id),
+        env.DB.prepare('DELETE FROM sessions WHERE user_id = ?').bind(user.id),
+    ])
     return Response.json({ ok: true })
 }
 
@@ -139,7 +156,7 @@ async function resetPassword(request: Request, env: Env) {
 //   POST /api/login     2  (read hash, then one batch: session + progress)
 //   GET  /api/me        1  (email + all progress), or 0 without a valid-looking cookie
 //   POST /api/progress  1  (session check is a subquery in the write), 0 on bad input
-//   POST /api/reset-password 1  (update + log out everywhere, one batch), 0 on bad input
+//   POST /api/reset-password 2  (read by email, then update + log out in one batch); 1 on a mismatch, 0 on bad input
 //   POST /api/logout    1, or 0 without a valid-looking cookie
 //   POST /api/evaluations 1  (attempt + "done" if passed, one batch), 0 on bad input
 //   bad input / bad JSON / failed validation: 0
