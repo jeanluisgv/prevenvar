@@ -10,13 +10,30 @@
         { "pattern": "prevenvar.com", "custom_domain": true },
         { "pattern": "www.prevenvar.com", "custom_domain": true }
     ],
-    // Workers Logs: every request (URL, status, timing, errors) is viewable in
-    // the dashboard (Worker → Observability). Free plan: 200k events/day, kept 3 days.
-    // Set here so deploys don't switch it back off.
+    // Observability (dashboard: Worker → Observability). Copied from the
+    // dashboard's settings so deploys keep them exactly as they are there.
+    //  - logs:   every request (URL, status, timing, errors).
+    //  - traces: timeline of each request (e.g. how long each D1 call took).
+    //  - issues: repeated errors grouped together.
+    // redact_query_string is off: the site sends no private data in URLs
+    // (passwords etc. go in POST bodies, which are never logged).
     "observability": {
+        "enabled": false,
+        "head_sampling_rate": 1,
+        "redact_query_string": false,
         "logs": {
             "enabled": true,
-            "invocation_logs": true
+            "head_sampling_rate": 1,
+            "invocation_logs": true,
+            "persist": true
+        },
+        "traces": {
+            "enabled": true,
+            "head_sampling_rate": 1,
+            "persist": true
+        },
+        "issues": {
+            "enabled": true
         }
     },
     "assets": {
