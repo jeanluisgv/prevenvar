@@ -10,6 +10,15 @@
         { "pattern": "prevenvar.com", "custom_domain": true },
         { "pattern": "www.prevenvar.com", "custom_domain": true }
     ],
+    // Workers Logs: every request (URL, status, timing, errors) is viewable in
+    // the dashboard (Worker → Observability). Free plan: 200k events/day, kept 3 days.
+    // Set here so deploys don't switch it back off.
+    "observability": {
+        "logs": {
+            "enabled": true,
+            "invocation_logs": true
+        }
+    },
     "assets": {
         "not_found_handling": "single-page-application",
         "run_worker_first": [
