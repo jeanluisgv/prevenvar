@@ -3,12 +3,12 @@ import PreguntaPractica from '../components/PreguntaPractica'
 import SeleccionMultiple from '../components/SeleccionMultiple'
 import ImageBase from '../components/ImageBase'
 import VideoBase from '../components/VideoBase'
-import img_2_1_1 from '../assets/img_2_1_1.svg'
-import img_2_2_1 from '../assets/img_2_2_1.svg'
-import img_2_3_1 from '../assets/img_2_3_1.svg'
-import img_2_4_1 from '../assets/img_2_4_1.svg'
-import img_2_5_1 from '../assets/img_2_5_1.svg'
-import img_2_6_1 from '../assets/img_2_6_1.svg'
+import img_2_1_1 from '../assets/img_2_1_1.jpg'
+import img_2_2_1 from '../assets/img_2_2_1.jpg'
+import img_2_3_1 from '../assets/img_2_3_1.jpg'
+import img_2_4_1 from '../assets/img_2_4_1.jpg'
+import img_2_5_1 from '../assets/img_2_5_1.jpg'
+import img_2_6_1 from '../assets/img_2_6_1.jpg'
 function Overview() {
     return (
         <>

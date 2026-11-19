@@ -6,12 +6,12 @@ import VideoBase from '../components/VideoBase'
 import ImageBase from '../components/ImageBase'
 
 
-import img_4_1_1 from '../assets/img_4_1_1.svg'
-import img_4_2_1 from '../assets/img_4_2_1.svg'
-import img_4_3_1 from '../assets/img_4_3_1.svg'
-import img_4_4_1 from '../assets/img_4_4_1.svg'
-import img_4_5_1 from '../assets/img_4_5_1.svg'
-import img_4_6_1 from '../assets/img_4_6_1.svg'
+import img_4_1_1 from '../assets/img_4_1_1.jpg'
+import img_4_2_1 from '../assets/img_4_2_1.jpg'
+import img_4_3_1 from '../assets/img_4_3_1.jpg'
+import img_4_4_1 from '../assets/img_4_4_1.jpg'
+import img_4_5_1 from '../assets/img_4_5_1.jpg'
+import img_4_6_1 from '../assets/img_4_6_1.jpg'
 
 
 function Overview() {

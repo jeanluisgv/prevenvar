@@ -5,12 +5,12 @@ import SeleccionMultiple from '../components/SeleccionMultiple'
 import VideoBase from '../components/VideoBase'
 import ImageBase from '../components/ImageBase'
 
-import img_3_1_1 from '../assets/img_3_1_1.svg'
-import img_3_2_1 from '../assets/img_3_2_1.svg'
-import img_3_3_1 from '../assets/img_3_3_1.svg'
-import img_3_4_1 from '../assets/img_3_4_1.svg'
-import img_3_5_1 from '../assets/img_3_5_1.svg'
-import img_3_6_1 from '../assets/img_3_6_1.svg'
+import img_3_1_1 from '../assets/img_3_1_1.jpg'
+import img_3_2_1 from '../assets/img_3_2_1.jpg'
+import img_3_3_1 from '../assets/img_3_3_1.jpg'
+import img_3_4_1 from '../assets/img_3_4_1.jpg'
+import img_3_5_1 from '../assets/img_3_5_1.jpg'
+import img_3_6_1 from '../assets/img_3_6_1.jpg'
 
 
 function Overview() {

@@ -7,7 +7,7 @@
  */
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { Link, useLocation } from 'react-router-dom'
-import logo from '../assets/prevenvarLogo.svg'
+import logo from '../assets/prevenvarLogo.png'
 import { sections } from '../sections'
 import { sectionPath } from '../sections/types'
 

@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import logo from './assets/prevenvarLogo.svg'
+import logo from './assets/prevenvarLogo.png'
 import { useEffect, useState } from 'react'
 import { validateEmail, validatePassword } from './validation'
 import { getSession, setSessionFromResponse } from './auth'
