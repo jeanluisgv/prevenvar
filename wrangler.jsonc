@@ -1,5 +1,5 @@
 {
-    "name": "moms-website",
+    "name": "prevenvar",
     "main": "worker/index.ts",
     "compatibility_date": "2026-11-01",
     // The site is served only at prevenvar.com (and www). Kept here, not just in

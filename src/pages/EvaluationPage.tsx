@@ -18,12 +18,24 @@ import NextStepLink from './NextStepLink'
 
 const btn_style = 'px-5 py-2 bg-blue-800 text-white rounded-lg hover:bg-blue-600 disabled:opacity-50'
 
+/**
+ * The passing attempt of each evaluation, so the user can come back and re-read
+ * their answers and the explanations. Kept ONLY in this tab's memory: never sent
+ * to the server, gone after a page reload. Keyed by user too, so logging out and
+ * in as someone else in the same tab never shows the previous person's answers.
+ */
+type ReviewedAttempt = { questions: AskedQuestion[], answers: string[][] }
+const passedAttempts = new Map<string, ReviewedAttempt>()
+
 export default function EvaluationPage({ section, step }: { section: Section, step: EvaluationStep }) {
-    const { byKey } = useProgress()
+    const { byKey, session } = useProgress()
     const item = byKey.get(progressKey(section, step))!
     const { evaluation } = step
     // Bumping this key throws away the current attempt and starts a fresh one.
     const [attemptNo, setAttemptNo] = useState(0)
+    const reviewKey = `${session.email}|${item.key}`
+    // Passed earlier in this tab: show those answers again instead of the summary.
+    const review = attemptNo === 0 ? passedAttempts.get(reviewKey) : undefined
 
     if (!item.unlocked) return <LockedNotice />
 
@@ -35,8 +47,8 @@ export default function EvaluationPage({ section, step }: { section: Section, st
             <h1 className="text-[25px] font-semibold -mt-4">{item.title}</h1>
             {evaluation.intro && <div className="flex flex-col gap-3 leading-7">{evaluation.intro}</div>}
 
-            {item.complete && attemptNo === 0 ? (
-                // Passed on an earlier visit.
+            {item.complete && attemptNo === 0 && !review ? (
+                // Passed before this tab was opened (or the page was reloaded).
                 <div className="flex flex-col gap-4 rounded-lg border-2 border-gray-300 bg-white p-4">
                     <p className="flex items-center gap-2 font-semibold text-green-700">
                         <FaCheckCircle aria-hidden="true" />
@@ -45,10 +57,14 @@ export default function EvaluationPage({ section, step }: { section: Section, st
                     <NextStepLink item={item} />
                 </div>
             ) : (
+                // Same element whether just answering or reviewing, so passing doesn't
+                // swap it out: the answers and explanations stay on screen.
                 <Attempt
                     key={attemptNo}
                     evaluation={evaluation}
                     itemKey={item.key}
+                    review={review}
+                    onPassed={attempt => passedAttempts.set(reviewKey, attempt)}
                     onRetry={() => { setAttemptNo(n => n + 1); window.scrollTo({ top: 0 }) }}
                 />
             )}
@@ -56,14 +72,21 @@ export default function EvaluationPage({ section, step }: { section: Section, st
     )
 }
 
-type AttemptProps = { evaluation: Evaluation, itemKey: string, onRetry: () => void }
+type AttemptProps = {
+    evaluation: Evaluation
+    itemKey: string
+    /** A passed attempt from earlier in this tab: shown already submitted. */
+    review?: ReviewedAttempt
+    onPassed: (attempt: ReviewedAttempt) => void
+    onRetry: () => void
+}
 
-function Attempt({ evaluation, itemKey, onRetry }: AttemptProps) {
+function Attempt({ evaluation, itemKey, review, onPassed, onRetry }: AttemptProps) {
     const { byKey, markDone, recordEvaluation } = useProgress()
     const record = evaluation.recordEvaluation ?? false
-    const [questions] = useState(() => buildAttempt(evaluation))
-    const [answers, setAnswers] = useState<string[][]>(() => questions.map(() => []))
-    const [submitted, setSubmitted] = useState(false)
+    const [questions] = useState(() => review?.questions ?? buildAttempt(evaluation))
+    const [answers, setAnswers] = useState<string[][]>(() => review?.answers ?? questions.map(() => []))
+    const [submitted, setSubmitted] = useState(review !== undefined)
     const [saveError, setSaveError] = useState(false)
     const [saving, setSaving] = useState(false)
 
@@ -109,6 +132,9 @@ function Attempt({ evaluation, itemKey, onRetry }: AttemptProps) {
     async function onSubmit(e: React.SyntheticEvent<HTMLFormElement>) {
         e.preventDefault()
         setSubmitted(true)
+        // Remember it before saving: saving marks the step complete, and the
+        // page then keeps showing this attempt instead of "Ya aprobaste".
+        if (passed) onPassed({ questions, answers })
         if (passed || record) await save()
     }
 
