@@ -1062,7 +1062,7 @@ const modulo4: Section = {
         {
             id: 'unidad4',
             title: 'Unidad 4: Bienestar Y Calidad De Vida Laboral',
-            waitSeconds: 0,
+            waitSeconds: 600,
             Content: Unidad4
         },
         {
@@ -1136,7 +1136,7 @@ const modulo4: Section = {
         {
             id: 'unidad5',
             title: 'Unidad 5: Concilación Entre La Vida Laboral Y Familiar',
-            waitSeconds: 0,
+            waitSeconds: 600,
             Content: Unidad5
         },
         {
@@ -1220,7 +1220,7 @@ const modulo4: Section = {
         {
             id: 'unidad6',
             title: 'Unidad 6: Cultura Organizacional Y Buenas Prácticas Laborales',
-            waitSeconds: 0,
+            waitSeconds: 600,
             Content: Unidad6
         },
         {
@@ -1293,7 +1293,7 @@ const modulo4: Section = {
         }, {
             id: 'unidad7',
             title: 'Caso Práctico Inegrador',
-            waitSeconds: 0,
+            waitSeconds: 600,
             Content: ActividadFinal
         }
 

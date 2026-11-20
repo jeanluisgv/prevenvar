@@ -1117,7 +1117,7 @@ const modulo3: Section = {
         {
             id: 'unidad3',
             title: 'Unidad 3: Acoso Sexual',
-            waitSeconds: 0,
+            waitSeconds: 600,
             Content: Unidad3
         },
         {
@@ -1359,7 +1359,7 @@ const modulo3: Section = {
         {
             id: 'unidad6',
             title: 'Unidad 6: Cultura De Respeto Y Prevencion',
-            waitSeconds: 0,
+            waitSeconds: 600,
             Content: Unidad6
         },
         {

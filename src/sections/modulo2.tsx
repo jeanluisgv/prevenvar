@@ -1008,7 +1008,7 @@ const modulo2: Section = {
         {
             id: 'unidad4',
             title: 'Unidad 4: Igual Remuneración Por Trabajo De Igual Valor',
-            waitSeconds: 0,
+            waitSeconds: 600,
             Content: Unidad4
         },
         {
@@ -1060,7 +1060,7 @@ const modulo2: Section = {
         {
             id: 'unidad5',
             title: 'Unidad 5: Sesgos ',
-            waitSeconds: 0,
+            waitSeconds: 600,
             Content: Unidad5
         },
         {
