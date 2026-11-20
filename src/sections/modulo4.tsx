@@ -839,7 +839,7 @@ const modulo4: Section = {
         {
             id: 'unidad1',
             title: 'Unidad 1: Reclunamiento Y Selección Inclusiva',
-            waitSeconds: 0,
+            waitSeconds: 600,
             Content: Unidad1
         },
         {
@@ -849,7 +849,7 @@ const modulo4: Section = {
                 questionsToAsk: 5,
                 passingScore: 4,
                 shuffleOptions: true,
-                showCorrectAnswers: true,
+                showCorrectAnswers: false,
                 recordEvaluation: false,
                 questions: [
                     {
@@ -929,7 +929,7 @@ const modulo4: Section = {
                 questionsToAsk: 5,
                 passingScore: 4,
                 shuffleOptions: true,
-                showCorrectAnswers: true,
+                showCorrectAnswers: false,
                 recordEvaluation: false,
                 questions: [
                     {
@@ -1003,7 +1003,7 @@ const modulo4: Section = {
                 questionsToAsk: 5,
                 passingScore: 4,
                 shuffleOptions: true,
-                showCorrectAnswers: true,
+                showCorrectAnswers: false,
                 recordEvaluation: false,
                 questions: [
                     {
@@ -1072,7 +1072,7 @@ const modulo4: Section = {
                 questionsToAsk: 5,
                 passingScore: 4,
                 shuffleOptions: true,
-                showCorrectAnswers: true,
+                showCorrectAnswers: false,
                 recordEvaluation: false,
                 questions: [
                     {
@@ -1146,7 +1146,7 @@ const modulo4: Section = {
                 questionsToAsk: 5,
                 passingScore: 4,
                 shuffleOptions: true,
-                showCorrectAnswers: true,
+                showCorrectAnswers: false,
                 recordEvaluation: false,
                 questions: [
                     {
