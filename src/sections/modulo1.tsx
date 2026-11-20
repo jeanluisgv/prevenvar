@@ -33,6 +33,19 @@ function Overview() {
 
 
 function Unidad1() {
+    interface Hito {
+        year: string;
+        description: string;
+    }
+
+    const hitos: Hito[] = [
+        { year: "Año", description: "Hito Histórico" },
+        { year: "1916", description: "Se aprueba la jornada laboral de 8 horas diarias." },
+        { year: "1922", description: "Huelga general y masacre obrera del 15 de noviembre en Guayaquil." },
+        { year: "1925", description: "Creación del Ministerio de Trabajo tras la Revolución Juliana." },
+        { year: "1938", description: "Promulgación del primer Código del Trabajo." },
+        { year: "2008", description: "Eliminación de la tercerización (Mandato 8) y nueva Constitución" },
+    ];
     return (
         <>
             {/* ---------- 1.1 ---------- */}
@@ -40,6 +53,96 @@ function Unidad1() {
 
                 <VideoBase src="https://www.youtube.com/embed/l3BRNl92inw?si=gw1G_1eHMqxb3IPn" title="Derechos Laborales de Mujeres y Hombre" />
                 <br />
+                <p className="pl-2"> Para poder comprender un poco lo que es Derecho Laboral en el Ecuador conozcamos un poco su historia. </p>
+
+                {/* ------- Historia del Derecho Titulo ------*/}
+                <div className=" pl-2 border-gray-200 space-y-4 leading-7">
+
+                    <h1 className="text-2xl"><strong>Historia del Derecho Laboral en el Ecuador </strong></h1>
+                    <div className="pl-4">
+                        <p>El derecho laboral ecuatoriano no surgió de la noche a la mañana; es el resultado de siglos de lucha, organización obrera y cambios sociales para garantizar condiciones dignas de trabajo. Conocer esta historia permite a cada trabajador entender el valor de sus derechos actuales y por qué deben defenderse. </p>
+
+                    </div>
+
+                    {/* -------- Historia del Derecho a. -------*/}
+                    <h2 className="text-xl"> <strong>a. La época colonial y los inicios de la República (Siglos XVI - XIX) </strong></h2>
+                    <div className="pl-4 space-y-4">
+                        <p>Durante la colonia y las primeras décadas de vida republicana (a partir de 1830), no existían leyes que protegieran al trabajador. Predominaban sistemas de explotación como: </p>
+                        <ul className="list-disc pl-8 ">
+                            <li>La mita y los obrajes: Trabajo forzado e inhumano impuesto a los indígenas en minas y talleres textiles.</li>
+                            <li>El concertaje: Un sistema de deudas heredables que ataba a los campesinos indígenas (huasipungueros) a las haciendas de por vida, sin recibir un salario real. </li>
+                        </ul>
+                    </div>
+
+                    {/* ----- Historia del Derecho b. -----*/}
+                    <h2 className="text-xl"> <strong>b. La Revolución Liberal y las primeras leyes (1895 - 1920)  </strong></h2>
+                    <div className="pl-4 space-y-4">
+                        <p>Con el triunfo de la Revolución Liberal liderada por Eloy Alfaro en 1895, comenzaron las primeras reformas sociales: </p>
+                        <ul className="list-disc pl-8">
+                            <li>Abolición del concertaje (1918): Se eliminó legalmente la prisión por deudas, liberando a miles de campesinos de la servidumbre formal. </li>
+                            <li>Ley de Jornada Laboral (1916): Se estableció por primera vez la jornada de 8 horas diarias, 6 días a la semana, además del pago de horas extras. Esta ley fue una conquista directa tras las primeras huelgas de trabajadores ferroviarios, tipógrafos y artesanos en Guayaquil y Quito.  </li>
+                        </ul>
+                    </div>
+
+                    {/* ----- Historia del Derecho c. -----*/}
+                    <h2 className="text-xl"> <strong>c. La masacre del 15 de noviembre de 1922 y la Revolución Juliana (1922 - 1930) </strong></h2>
+                    <div className="pl-4 space-y-4">
+                        <p>El crecimiento de las fábricas y el puerto de Guayaquil fortaleció a los sindicatos. En noviembre de 1922, miles de trabajadores protagonizaron una huelga general exigiendo mejores salarios y el control del costo de la vida. La protesta terminó en una brutal represión militar el 15 de noviembre, conocida como el "bautismo de sangre" de la clase obrera ecuatoriana. </p>
+                        <p>Este hecho impulsó la Revolución Juliana de 1925, liderada por jóvenes militares progresistas que crearon instituciones clave: </p>
+                        <ul className="list-disc pl-8">
+                            <li>El Ministerio de Previsión Social y Trabajo (1925).  </li>
+                            <li>La Caja de Pensiones (1928), semilla del actual Instituto Ecuatoriano de Seguridad Social (IESS). </li>
+                            <li>Leyes sobre contratos individuales, prevención de accidentes de trabajo y protección a la mujer embarazada. </li>
+                        </ul>
+                    </div>
+                    {/* ----- Historia del Derecho d. -----*/}
+                    <h2 className="text-xl"> <strong>d. El Código del Trabajo de 1938: El gran hito  </strong></h2>
+                    <div className="pl-4 space-y-4">
+                        <p>En 1938, durante el gobierno del general Alberto Enríquez Gallo, se promulgó el primer Código del Trabajo del Ecuador. </p>
+                        <p>Esta obra jurídica —redactada con el aporte de intelectuales y dirigentes obreros— reunió y amplió todas las conquistas anteriores en un solo cuerpo legal. Estableció pilares que siguen vigentes: </p>
+                        <ul className="list-disc pl-8">
+                            <li>El derecho a la sindicalización y a la huelga.</li>
+                            <li>La contratación colectiva. </li>
+                            <li>El salario mínimo vital.</li>
+                            <li>Las indemnizaciones por despido intempestivo y accidentes laborales. </li>
+                            <li>El derecho a vacaciones pagadas y descanso semanal obligatorio.</li>
+                        </ul>
+                    </div>
+
+                    {/* ----- Historia del Derecho e. -----*/}
+                    <h2 className="text-xl"> <strong>e. Consolidación sindical y reformas sociales (1940 - 1980) </strong></h2>
+                    <div className="pl-4 space-y-4">
+                        <p>En las décadas siguientes, el movimiento obrero se organizó a nivel nacional con la creación de centrales sindicales como la CTE (1944), CEDOC y CEOSL, que luego formaron el Frente Unitario de Trabajadores (FUT) en los años 70. Gracias a la presión social se lograron nuevos beneficios económicos para aliviar el costo de la vida: </p>
+
+                        <ul className="list-disc pl-8">
+                            <li>Décimo tercer sueldo (bono navideño, creado en 1962). </li>
+                            <li>Décimo cuarto sueldo (bono escolar, creado en 1968).  </li>
+                            <li>Participación en el 15% de las utilidades de las empresas. </li>
+                        </ul>
+                    </div>
+
+                    {/* ----- Historia del Derecho f. -----*/}
+                    <h2 className="text-xl"> <strong>f. Flexibilización laboral y retorno a la protección (1990 - Actualidad)</strong></h2>
+                    <div className="pl-4 space-y-4">
+                        <ul className="list-disc pl-8">
+                            <li>Años 90 y 2000: Bajo políticas económicas de apertura de mercados, se introdujeron reformas que flexibilizaron el trabajo, permitiendo la tercerización laboral y el trabajo por horas, lo que debilitó la estabilidad y los sindicatos.</li>
+                            <li>Constitución de 2008 y Mandato 8: La Constitución de Montecristi declaró los derechos laborales como irrenunciables e intangibles y consagró el principio in dubio pro operario (en caso de duda, la ley se aplica a favor del trabajador). Además, el Mandato Constituyente N.º 8 eliminó la tercerización y la intermediación laboral, obligando a la contratación directa. </li>
+                            <li>Retos actuales: Hoy en día, el derecho laboral ecuatoriano enfrenta el desafío de adaptarse a las nuevas formas de empleo —como el teletrabajo y las plataformas digitales— asegurando que la tecnología no signifique un retroceso en las garantías conquistadas durante más de un siglo. </li>
+                        </ul>
+                    </div>
+
+                    <h2 className="text-xl"> <strong>Resumen de fechas clave para recordar</strong></h2>
+                    <ul className="divide-y divide-gray-200 rounded-lg border border-gray-200 shadow-sm">
+                        {hitos.map((hito) => (
+                            <li key={hito.year} className="flex gap-4 px-4 py-3 hover:bg-gray-50">
+                                <span className="w-16 shrink-0 font-medium text-gray-900">{hito.year}</span>
+                                <span className="text-gray-700">{hito.description}</span>
+                            </li>
+                        ))}
+                    </ul>
+
+
+                </div>
                 <h1 className="text-2xl mb-4">
                     <strong>1.1 INTRODUCCIÓN A LOS DERECHOS LABORALES </strong>
                 </h1>
