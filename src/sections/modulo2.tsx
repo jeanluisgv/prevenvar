@@ -23,6 +23,9 @@ function Overview() {
                 <p>
                     Al finalizar este módulo, la persona participante comprenderá los conceptos de igualdad de género, igualdad salarial y trabajo de igual valor, identificando prácticas discriminatorias y promoviendo ambientes laborales inclusivos, diversos y respetuosos.
                 </p>
+                <p>
+                    Este módulo responde directamente a las disposiciones de la Ley Orgánica para la Igualdad Salarial entre Mujeres y Hombres y del Acuerdo Ministerial Nro. MDT-2025-006 del Ministerio del Trabajo del Ecuador, brindando herramientas prácticas para valorar los puestos de trabajo con justicia y erradicar toda brecha salarial injustificada en el entorno laboral.
+                </p>
             </div>
         </>
 
@@ -35,12 +38,31 @@ function Unidad1() {
         <>
             <section className="mb-12">
                 <h1 className="text-2xl mb-4">
+                    <strong>Objetivo General </strong>
+                </h1>
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4 space-y-4">
+                        <p>
+                            Al finalizar este módulo, la persona participante comprenderá los conceptos de igualdad de género, igualdad salarial y trabajo de igual valor, identificando prácticas discriminatorias y promoviendo ambientes laborales inclusivos, diversos y respetuosos.
+                        </p>
+                        <p>
+                            Este módulo responde directamente a las disposiciones de la <strong>Ley Orgánica para la Igualdad Salarial entre Mujeres y Hombres</strong> y del <strong>Acuerdo Ministerial Nro. MDT-2025-006</strong> del Ministerio del Trabajo del Ecuador, brindando herramientas prácticas para valorar los puestos de trabajo con justicia y erradicar toda brecha salarial injustificada en el entorno laboral.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section className="mb-12">
+                <h1 className="text-2xl mb-4">
                     <strong>Objetivo de aprendizaje </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <p>
-                        Al finalizar este módulo, la persona participante comprenderá los conceptos de igualdad de género, igualdad salarial y trabajo de igual valor, identificando prácticas discriminatorias y promoviendo ambientes laborales inclusivos, diversos y respetuosos.
-                    </p>
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4 space-y-4">
+                        <p className="text-sm italic">Duración estimada: 1 hora 30 minutos</p>
+                        <p>
+                            Comprender los conceptos de sexo, género, roles de género y estereotipos para reconocer cómo influyen en la vida laboral.
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -49,15 +71,17 @@ function Unidad1() {
                 <h1 className="text-2xl mb-4">
                     <strong>1.1 Sexo y Género </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
                     <ImageBase src={img_2_1_1} />
-                    <p>
-                        Aunque suelen utilizarse como sinónimos, sexo y género tienen significados diferentes.
-                    </p>
+                    <div className="pl-4">
+                        <p>
+                            Aunque suelen utilizarse como sinónimos, sexo y género tienen significados diferentes.
+                        </p>
+                    </div>
 
-                    <h3 className="text-lg pt-2">
+                    <h2 className="text-xl pt-2">
                         <strong>Sexo </strong>
-                    </h3>
+                    </h2>
                     <div className="pl-4 space-y-2">
                         <p>Se refiere a las características biológicas con las que nacen las personas.</p>
                         <p><strong>Ejemplos:</strong></p>
@@ -67,13 +91,22 @@ function Unidad1() {
                         </ul>
                     </div>
 
-                    <h3 className="text-lg pt-2">
+                    <h2 className="text-xl pt-2">
                         <strong>Género </strong>
-                    </h3>
+                    </h2>
                     <div className="pl-4 space-y-2">
                         <p>Se refiere a los roles, comportamientos y expectativas que la sociedad asigna a mujeres y hombres.</p>
                         <p>
                             <strong>Ejemplo:</strong> Pensar que cierto trabajo "es para hombres" o "es para mujeres".
+                        </p>
+                    </div>
+
+                    <h2 className="text-xl pt-2">
+                        <strong>¿Por qué es importante distinguirlos en el trabajo?</strong>
+                    </h2>
+                    <div className="pl-4">
+                        <p>
+                            Mientras que el sexo responde a condiciones biológicas universales que no cambian según el país o la época, el género es una construcción social y cultural. Esto significa que las ideas sobre qué tareas "corresponden" a un hombre o a una mujer fueron creadas por la sociedad y, por lo tanto, pueden transformarse. En el ámbito laboral, confundir sexo con género lleva a excluir talento valioso basándose en costumbres antiguas y no en las verdaderas capacidades profesionales de cada persona.
                         </p>
                     </div>
                 </div>
@@ -84,15 +117,16 @@ function Unidad1() {
                 <h1 className="text-2xl mb-4">
                     <strong>1.2 Roles de Género </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <img></img>
-                    <p>
-                        Son las actividades, funciones o comportamientos que tradicionalmente la sociedad asigna a hombres y mujeres.
-                    </p>
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4">
+                        <p>
+                            Son las actividades, funciones o comportamientos que tradicionalmente la sociedad asigna a hombres y mujeres.
+                        </p>
+                    </div>
 
-                    <h3 className="text-lg pt-2">
+                    <h2 className="text-xl pt-2">
                         <strong>Ejemplos </strong>
-                    </h3>
+                    </h2>
                     <div className="pl-4 space-y-2">
                         <ul className="pl-4 space-y-1">
                             <li>❌ "Los hombres deben trabajar fuera de casa."</li>
@@ -100,6 +134,15 @@ function Unidad1() {
                         </ul>
                         <p>
                             Actualmente, tanto hombres como mujeres pueden desarrollar cualquier actividad laboral o familiar.
+                        </p>
+                    </div>
+
+                    <h2 className="text-xl pt-2">
+                        <strong>El impacto de los roles tradicionales en la vida laboral</strong>
+                    </h2>
+                    <div className="pl-4">
+                        <p>
+                            Cuando se asigna a las mujeres la responsabilidad exclusiva del cuidado del hogar, de los hijos o de adultos mayores (lo que se conoce como <strong>trabajo de cuidado no remunerado</strong>), ellas enfrentan una "doble jornada" que limita su tiempo para capacitarse o aceptar cargos de mayor responsabilidad. Por otro lado, a los hombres suele presionárseles para ser los únicos proveedores económicos, dificultando que ejerzan plenamente su derecho a la paternidad activa. Promover roles flexibles y compartidos permite que tanto mujeres como hombres equilibren su vida personal y profesional en igualdad de condiciones.
                         </p>
                     </div>
                 </div>
@@ -110,15 +153,16 @@ function Unidad1() {
                 <h1 className="text-2xl mb-4">
                     <strong>1.3 Estereotipos de Género </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <img></img>
-                    <p>
-                        Son ideas preconcebidas que pueden limitar oportunidades.
-                    </p>
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4">
+                        <p>
+                            Son ideas preconcebidas que pueden limitar oportunidades.
+                        </p>
+                    </div>
 
-                    <h3 className="text-lg pt-2">
+                    <h2 className="text-xl pt-2">
                         <strong>Ejemplos </strong>
-                    </h3>
+                    </h2>
                     <div className="pl-4 space-y-2">
                         <ul className="pl-4 space-y-1">
                             <li>❌ Los hombres son mejores líderes.</li>
@@ -129,6 +173,32 @@ function Unidad1() {
                             Estos estereotipos pueden generar discriminación y desigualdad.
                         </p>
                     </div>
+
+                    <h2 className="text-xl pt-2">
+                        <strong>¿Cómo se manifiestan los estereotipos en las decisiones diarias de una empresa?</strong>
+                    </h2>
+                    <div className="pl-4">
+                        <ul className="list-disc pl-6 space-y-2">
+                            <li>
+                                <strong>Segregación ocupacional:</strong> Concentrar a las mujeres únicamente en áreas administrativas, de limpieza o atención al cliente, y a los hombres únicamente en áreas técnicas, operativas, de transporte o gerenciales.
+                            </li>
+                            <li>
+                                <strong>Sesgos en las evaluaciones:</strong> Calificar a un hombre firme como "un líder con carácter", mientras que a una mujer con la misma actitud se la etiqueta como "autoritaria" o "conflictiva".
+                            </li>
+                        </ul>
+                    </div>
+
+                    <h2 className="text-xl pt-2">
+                        <strong>Caso práctico de reflexión</strong>
+                    </h2>
+                    <div className="pl-4 space-y-2">
+                        <p>
+                            En una empresa industrial se abre una vacante para Supervisor de Planta. Dos candidatos internos postulan: Valeria, ingeniera industrial con 6 años de experiencia en producción, y Jhon, técnico con 3 años de experiencia. Durante la entrevista, un miembro del comité comenta: <em>"Ese puesto requiere tratar con operarios de turno nocturno, mejor pongamos a un hombre porque a una mujer no la van a respetar".</em>
+                        </p>
+                        <p>
+                            <strong>Análisis:</strong> Esta decisión está basada en un estereotipo de género y no en méritos objetivos. La capacidad de liderazgo y supervisión depende de la formación, experiencia y habilidades de gestión de la persona, nunca de su género.
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -137,10 +207,10 @@ function Unidad1() {
                 <h1 className="text-2xl mb-4">
                     <strong>🎥 Video: Diferencia entre sexo y género </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-
-
-                    <VideoBase src="https://drive.google.com/file/d/1_OBCQHSDiXkieIuRzuBdM-KiSZBaNPud/preview" title='¿Sabes cuál es la diferencia entre sexo y género?' />
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4">
+                        <VideoBase src="https://drive.google.com/file/d/1_OBCQHSDiXkieIuRzuBdM-KiSZBaNPud/preview" title='¿Sabes cuál es la diferencia entre sexo y género?' />
+                    </div>
                 </div>
             </section>
         </>
@@ -154,10 +224,12 @@ function Unidad2() {
                 <h1 className="text-2xl mb-4">
                     <strong>Objetivo de aprendizaje </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <p>
-                        Reconocer la importancia de la igualdad de género y sus beneficios para las personas y las organizaciones.
-                    </p>
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4">
+                        <p>
+                            Reconocer la importancia de la igualdad de género y sus beneficios para las personas y las organizaciones.
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -166,14 +238,24 @@ function Unidad2() {
                 <h1 className="text-2xl mb-4">
                     <strong>2.1 Igualdad de Derechos </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <img></img>
-                    <p>
-                        La igualdad de género significa que todas las personas tienen los mismos derechos, responsabilidades y oportunidades.
-                    </p>
-                    <p>
-                        Nadie debe recibir un trato diferente por ser hombre o mujer.
-                    </p>
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4 space-y-4">
+                        <p>
+                            La igualdad de género significa que todas las personas tienen los mismos derechos, responsabilidades y oportunidades.
+                        </p>
+                        <p>
+                            Nadie debe recibir un trato diferente por ser hombre o mujer.
+                        </p>
+                    </div>
+
+                    <h2 className="text-xl pt-2">
+                        <strong>Respaldo en la Constitución del Ecuador</strong>
+                    </h2>
+                    <div className="pl-4">
+                        <p>
+                            El Artículo 70 y el Artículo 331 de la Constitución de la República del Ecuador obligan al Estado y a las organizaciones a garantizar a las mujeres igualdad en el acceso al empleo, a la formación, a la promoción laboral y profesional, y a una remuneración equitativa, prohibiendo expresamente cualquier forma de discriminación, acoso o acto de violencia, sea directa o indirecta, que afecte a las mujeres en el trabajo.
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -182,19 +264,34 @@ function Unidad2() {
                 <h1 className="text-2xl mb-4">
                     <strong>2.2 Equidad </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <img></img>
-                    <p>
-                        La equidad consiste en aplicar medidas que permitan reducir desigualdades y garantizar oportunidades reales para todas las personas.
-                    </p>
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4">
+                        <p>
+                            La equidad consiste en aplicar medidas que permitan reducir desigualdades y garantizar oportunidades reales para todas las personas.
+                        </p>
+                    </div>
 
-                    <h3 className="text-lg pt-2">
+                    <h2 className="text-xl pt-2">
                         <strong>Ejemplo </strong>
-                    </h3>
+                    </h2>
                     <div className="pl-4 space-y-2">
                         <p>
                             Si un grupo enfrenta barreras históricas para acceder a cargos directivos, la empresa puede implementar programas de desarrollo y capacitación para equilibrar oportunidades.
                         </p>
+                    </div>
+
+                    <h2 className="text-xl pt-2">
+                        <strong>Diferencia clave: Igualdad vs. Equidad</strong>
+                    </h2>
+                    <div className="pl-4">
+                        <ul className="list-disc pl-6 space-y-2">
+                            <li>
+                                <strong>Igualdad</strong> es dar a todas las personas exactamente las mismas reglas, derechos y oportunidades (por ejemplo, que cualquier trabajador pueda postular a un ascenso).
+                            </li>
+                            <li>
+                                <strong>Equidad</strong> es reconocer que no todas las personas parten desde el mismo punto debido a barreras históricas o responsabilidades familiares, por lo que se aplican medidas de ajuste (como horarios flexibles, salas de lactancia o programas de mentoría para liderazgo femenino) para que todos tengan posibilidades reales de alcanzar los mismos resultados.
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -204,30 +301,39 @@ function Unidad2() {
                 <h1 className="text-2xl mb-4">
                     <strong>2.3 Beneficios para la Empresa </strong>
                 </h1>
-                <ImageBase src={img_2_2_1} />
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <img></img>
-                    <p>La igualdad de género aporta:</p>
-                    <ul className="pl-4 space-y-1">
-                        <li>✅ Mejor clima laboral.</li>
-                        <li>✅ Mayor productividad.</li>
-                        <li>✅ Equipos más diversos.</li>
-                        <li>✅ Más innovación.</li>
-                        <li>✅ Mejor reputación organizacional.</li>
-                    </ul>
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <ImageBase src={img_2_2_1} />
+                    <div className="pl-4 space-y-2">
+                        <p>La igualdad de género aporta:</p>
+                        <ul className="pl-4 space-y-1">
+                            <li>✅ Mejor clima laboral.</li>
+                            <li>✅ Mayor productividad.</li>
+                            <li>✅ Equipos más diversos.</li>
+                            <li>✅ Más innovación.</li>
+                            <li>✅ Mejor reputación organizacional.</li>
+                        </ul>
+                    </div>
+
+                    <h2 className="text-xl pt-2">
+                        <strong>Compromiso legal en el Ecuador (Acuerdo Ministerial Nro. MDT-2025-006)</strong>
+                    </h2>
+                    <div className="pl-4">
+                        <p>
+                            Cumplir las políticas de igualdad y las 40 horas anuales de capacitación permite a las organizaciones obtener la <strong>Certificación de Cumplimiento de Obligaciones para alcanzar la Igualdad Salarial</strong> del Ministerio del Trabajo.
+                        </p>
+                    </div>
                 </div>
             </section>
 
             {/* ---------- Video ---------- */}
             <section className="mb-12">
                 <h1 className="text-2xl mb-4">
-                    <strong>🎥 Video: Igualdad de Genero </strong>
+                    <strong>🎥 Video: Igualdad de Género </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-
-
-                    <VideoBase src="https://drive.google.com/file/d/1yOTV-CdYaN-iBiqp-VjYYrO8lLFI0w7t/preview" title="Igualdad de Genero" />
-
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4">
+                        <VideoBase src="https://drive.google.com/file/d/1yOTV-CdYaN-iBiqp-VjYYrO8lLFI0w7t/preview" title="Igualdad de Género" />
+                    </div>
                 </div>
             </section>
 
@@ -236,19 +342,21 @@ function Unidad2() {
                 <h1 className="text-2xl mb-4">
                     <strong>Actividad Interactiva </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <SeleccionMultiple
-                        pregunta="Seleccione los beneficios de la igualdad de género."
-                        opciones={[
-                            'Mayor productividad',
-                            'Mejor clima laboral',
-                            'Más innovación',
-                            'Menor respeto',
-                            'Mayor discriminación',
-                        ]}
-                        correctas={['Mayor productividad', 'Mejor clima laboral', 'Más innovación']}
-                        explicacion="La igualdad de género mejora el clima laboral, aumenta la productividad y fomenta la innovación. En cambio, el menor respeto y la mayor discriminación son consecuencias de la desigualdad, no beneficios."
-                    />
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4">
+                        <SeleccionMultiple
+                            pregunta="Seleccione los beneficios de la igualdad de género."
+                            opciones={[
+                                'Mayor productividad',
+                                'Mejor clima laboral',
+                                'Más innovación',
+                                'Menor respeto',
+                                'Mayor discriminación',
+                            ]}
+                            correctas={['Mayor productividad', 'Mejor clima laboral', 'Más innovación']}
+                            explicacion="La igualdad de género mejora el clima laboral, aumenta la productividad y fomenta la innovación. En cambio, el menor respeto y la mayor discriminación son consecuencias de la desigualdad, no beneficios."
+                        />
+                    </div>
                 </div>
             </section>
         </>
@@ -262,10 +370,15 @@ function Unidad3() {
                 <h1 className="text-2xl mb-4">
                     <strong>Objetivo de aprendizaje </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <p>
-                        Comprender qué es la brecha salarial, sus causas y consecuencias.
-                    </p>
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4 space-y-4">
+                        <p>
+                            Comprender qué es la brecha salarial, sus causas y consecuencias.
+                        </p>
+                        <p>
+                            Asi mismo, usted identificará cómo el marco legal ecuatoriano protege el principio de igual remuneración por trabajo de igual valor y qué herramientas objetivas permiten prevenir y erradicar estas desigualdades dentro de las organizaciones.
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -274,12 +387,40 @@ function Unidad3() {
                 <h1 className="text-2xl mb-4">
                     <strong>3.1 ¿Qué es la Brecha Salarial? </strong>
                 </h1>
-                <ImageBase src={img_2_3_1} />
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <img></img>
-                    <p>
-                        Es la diferencia de remuneración que existe entre mujeres y hombres cuando no está justificada por factores objetivos.
-                    </p>
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <ImageBase src={img_2_3_1} />
+                    <div className="pl-4 space-y-4">
+                        <p>
+                            Es la diferencia de remuneración que existe entre mujeres y hombres cuando no está justificada por factores objetivos.
+                        </p>
+                        <p>
+                            Es importante distinguir entre dos situaciones: cuando dos personas ganan diferente porque una tiene mayor experiencia, más años de antigüedad, un título especializado requerido para el cargo o cumple jornadas suplementarias, existe una <strong>diferencia salarial justificada</strong>. En cambio, cuando dos personas realizan el mismo trabajo —o trabajos distintos que aportan un valor equivalente a la empresa— y una percibe menos dinero simplemente por ser mujer, estamos frente a una <strong>brecha salarial injustificada o discriminatoria</strong>.
+                        </p>
+                    </div>
+
+                    <h2 className="text-xl pt-2">
+                        <strong>Respaldo legal en el País</strong>
+                    </h2>
+                    <div className="pl-4 space-y-2">
+                        <p>En nuestro país, el principio de igualdad salarial cuenta con una sólida protección jurídica:</p>
+                        <ul className="list-disc pl-6 space-y-2">
+                            <li>
+                                <strong>Constitución de la República del Ecuador (Art. 326, numeral 4):</strong> Establece de forma expresa que "a trabajo de igual valor corresponderá igual remuneración".
+                            </li>
+                            <li>
+                                <strong>Convenio 100 de la OIT:</strong> Ratificado por el Ecuador, obliga a garantizar la igualdad de remuneración entre la mano de obra masculina y femenina por un trabajo de igual valor.
+                            </li>
+                            <li>
+                                <strong>Ley Orgánica para la Igualdad Salarial entre Mujeres y Hombres:</strong> Promueve que tanto el sector público como el privado apliquen criterios transparentes y libres de sesgos en la fijación de sueldos, bonos, comisiones y beneficios económicos.
+                            </li>
+                            <li>
+                                <strong>Código del Trabajo (Art. 79):</strong> Consagra el principio de "a trabajo igual, igual salario" sin distinción de sexo, edad, etnia u otras condiciones.
+                            </li>
+                            <li>
+                                <strong>Acuerdo Ministerial Nro. MDT-2025-006:</strong> Detalla las obligaciones de capacitación y los canales formales para reportar discriminación laboral en el país.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
@@ -288,14 +429,26 @@ function Unidad3() {
                 <h1 className="text-2xl mb-4">
                     <strong>3.2 Principales Causas </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <img></img>
-                    <ul className="list-disc pl-6 space-y-1">
-                        <li>Estereotipos de género.</li>
-                        <li>Sesgos en contratación y promoción.</li>
-                        <li>Menor acceso a posiciones directivas.</li>
-                        <li>Discriminación salarial.</li>
-                    </ul>
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4">
+                        <ul className="list-disc pl-6 space-y-2">
+                            <li>
+                                <strong>Estereotipos de género.</strong> La falsa creencia de que ciertos trabajos "valen más" porque tradicionalmente los realizan hombres, o que el salario de la mujer es solo un "ingreso complementario" para el hogar.
+                            </li>
+                            <li>
+                                <strong>Sesgos en contratación y promoción.</strong> Prejuicios inconscientes durante las entrevistas o evaluaciones, como suponer que una mujer tendrá menor disponibilidad de tiempo por asumir responsabilidades familiares.
+                            </li>
+                            <li>
+                                <strong>Menor acceso a posiciones directivas.</strong> La dificultad que enfrentan muchas mujeres para ascender a cargos de gerencia o alta dirección —fenómeno conocido como "techo de cristal"—, donde se concentran los salarios más altos.
+                            </li>
+                            <li>
+                                <strong>Discriminación salarial.</strong> Asignar directamente un sueldo base inferior o menores bonificaciones a una trabajadora frente a un compañero que desempeña las mismas funciones.
+                            </li>
+                            <li>
+                                <strong>Falta de transparencia en las escalas salariales.</strong> Cuando las empresas no cuentan con tabuladores salariales claros y objetivos, las remuneraciones suelen definirse mediante negociaciones individuales donde los sesgos personales terminan perjudicando a quienes tienen menor poder de negociación.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
@@ -304,75 +457,108 @@ function Unidad3() {
                 <h1 className="text-2xl mb-4">
                     <strong>3.3 Consecuencias </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-
-
-                    <h3 className="text-lg pt-2">
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <h2 className="text-xl">
                         <strong>Para las personas: </strong>
-                    </h3>
+                    </h2>
                     <div className="pl-4">
-                        <ul className="list-disc pl-6 space-y-1">
-                            <li>Menores ingresos.</li>
-                            <li>Menor acceso al ahorro.</li>
-                            <li>Menores pensiones futuras.</li>
+                        <ul className="list-disc pl-6 space-y-2">
+                            <li>
+                                <strong>Menores ingresos.</strong> Reduce la capacidad inmediata de cubrir necesidades básicas, acceder a vivienda, educación o mejorar la calidad de vida.
+                            </li>
+                            <li>
+                                <strong>Menor acceso al ahorro.</strong> Dificulta la posibilidad de generar reservas económicas para emergencias, inversión o patrimonio propio.
+                            </li>
+                            <li>
+                                <strong>Menores pensiones futuras.</strong> En el Ecuador, dado que los aportes al IESS y el cálculo de la jubilación dependen directamente del salario percibido durante la vida laboral, ganar menos hoy significa recibir una pensión de jubilación más baja en la vejez.
+                            </li>
                         </ul>
                     </div>
 
-                    <h3 className="text-lg pt-2">
+                    <h2 className="text-xl pt-2">
                         <strong>Para las empresas: </strong>
-                    </h3>
-                    <div className="pl-4">
-                        <ul className="list-disc pl-6 space-y-1">
-                            <li>Conflictos laborales.</li>
-                            <li>Menor compromiso.</li>
-                            <li>Pérdida de reputación.</li>
+                    </h2>
+                    <div className="pl-4 space-y-4">
+                        <ul className="list-disc pl-6 space-y-2">
+                            <li>
+                                <strong>Conflictos laborales.</strong> Cuando los trabajadores descubren desigualdades injustas en los pagos, se deteriora el clima laboral y aumentan las quejas internas.
+                            </li>
+                            <li>
+                                <strong>Menor compromiso.</strong> Una persona que siente que su esfuerzo no es valorado económicamente con justicia pierde motivación y productividad.
+                            </li>
+                            <li>
+                                <strong>Pérdida de reputación.</strong> Hoy en día, las organizaciones que incumplen la igualdad salarial enfrentan sanciones legales ante el Ministerio del Trabajo y pierden credibilidad frente a clientes, aliados y talento calificado.
+                            </li>
                         </ul>
+                        <p>
+                            Además, la brecha salarial afecta la economía general del país: cuando las mujeres perciben ingresos justos y equitativos, se fortalece la autonomía económica de los hogares, se reduce la pobreza familiar y se dinamiza el consumo y el desarrollo social.
+                        </p>
                     </div>
                 </div>
             </section>
-            <section>
+
+            {/* ---------- 3.4 ---------- */}
+            <section className="mb-12">
                 <h1 className="text-2xl mb-4">
-                    <strong>3.4 ¿Cómo prevenir la brecha salarial?
-                    </strong>
+                    <strong>3.4 ¿Cómo prevenir la brecha salarial? </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <p>
-                        Las diferencias de remuneración deben sustentarse en criterios objetivos relacionados con el puesto y no en características personales de las personas trabajadoras.
-                    </p>
-                    <h3 className="font-semibold">
-                        Algunos criterios objetivos son:
-                    </h3>
-                    <ul className="pl-6 space-y-1">
-                        <li>
-                            ✅ Responsabilidades del puesto.
-                        </li>
-                        <li>
-                            ✅ Competencias requeridas.
-                        </li>
-                        <li>
-                            ✅ Formación y experiencia.
-                        </li>
-                        <li>
-                            ✅ Nivel de complejidad del trabajo.
-                        </li>
-                        <li>
-                            ✅ Condiciones laborales.
-                        </li>
-                    </ul>
-                    <p>
-                        Cuando dos puestos tienen igual valor para la organización, la remuneración debe ser equivalente.
-                    </p>
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4">
+                        <p>
+                            Las diferencias de remuneración deben sustentarse en criterios objetivos relacionados con el puesto y no en características personales de las personas trabajadoras.
+                        </p>
+                    </div>
 
-                    <h3>
-                        <strong>Ejemplo Práctico</strong>
-                    </h3>
-                    <p>Ana y Carlos trabajan en áreas distintas de una empresa. Ambos puestos requieren una formación similar, tienen responsabilidades equivalentes y demandan el mismo nivel de esfuerzo. Sin embargo, Carlos recibe una remuneración superior sin una justificación objetiva. </p>
-                    <p><strong>Análisis: </strong> La situación podría reflejar una brecha salarial. Las diferencias salariales deben estar sustentadas en factores objetivos relacionados con el trabajo realizado y no en características personales de quienes ocupan los cargos. </p>
-                    <p><strong>Idea Clave:</strong> La brecha salarial puede prevenirse cuando las decisiones sobre remuneración se basan en criterios objetivos como las responsabilidades, competencias, experiencia y condiciones del puesto, garantizando igualdad para trabajos de igual valor.
-                        <br />
-                        Con eso ayudas a que el trabajador recuerde exactamente las respuestas de las preguntas 2, 4 y 5 antes de la evaluación. </p>
+                    <h2 className="text-xl pt-2">
+                        <strong>Algunos criterios objetivos son:</strong>
+                    </h2>
+                    <div className="pl-4 space-y-4">
+                        <ul className="pl-4 space-y-1">
+                            <li>✅ <strong>Responsabilidades del puesto.</strong> Nivel de toma de decisiones, manejo de presupuestos o personal a cargo.</li>
+                            <li>✅ <strong>Competencias requeridas.</strong> Conocimientos técnicos especializados, dominio de herramientas o idiomas necesarios para el cargo.</li>
+                            <li>✅ <strong>Formación y experiencia.</strong> Títulos académicos exigidos y años de trayectoria comprobada en funciones similares.</li>
+                            <li>✅ <strong>Nivel de complejidad del trabajo.</strong> Grado de dificultad analítica, operativa o resolución de problemas que exige la tarea.</li>
+                            <li>✅ <strong>Condiciones laborales.</strong> Esfuerzo físico, exposición a riesgos controlados o disponibilidad de horarios especiales.</li>
+                        </ul>
+                        <p>
+                            Cuando dos puestos tienen igual valor para la organización, la remuneración debe ser equivalente.
+                        </p>
+                    </div>
+
+                    <h2 className="text-xl pt-2">
+                        <strong>Buenas prácticas organizacionales para cerrar la brecha</strong>
+                    </h2>
+                    <div className="pl-4">
+                        <p>
+                            Para garantizar una verdadera equidad, las organizaciones deben implementar bandas o escalas salariales claras para cada cargo, realizar auditorías internas periódicas para detectar y corregir diferencias sin sustento técnico, y asegurar que los bonos, incentivos y oportunidades de ascenso se otorguen bajo indicadores de desempeño medibles y transparentes.
+                        </p>
+                    </div>
+
+                    <h2 className="text-xl pt-2">
+                        <strong>Ejemplo práctico</strong>
+                    </h2>
+                    <div className="pl-4 space-y-2">
+                        <p>
+                            Ana y Carlos trabajan en áreas distintas de una empresa. Ambos puestos requieren una formación similar, tienen responsabilidades equivalentes y demandan el mismo nivel de esfuerzo. Sin embargo, Carlos recibe una remuneración superior sin una justificación objetiva.
+                        </p>
+                        <p>
+                            <strong>Análisis: </strong>
+                            La situación podría reflejar una brecha salarial. Las diferencias salariales deben estar sustentadas en factores objetivos relacionados con el trabajo realizado y no en características personales de quienes ocupan los cargos.
+                        </p>
+                        <p>
+                            Para corregir esta situación, el área de Talento Humano debe realizar una valoración objetiva de ambos puestos, comparando las responsabilidades, competencias y esfuerzo que exige cada uno. Si se confirma que ambos cargos aportan un valor equivalente a la empresa, la organización está obligada a nivelar el salario de Ana al de Carlos, cumpliendo así con la ley ecuatoriana y los estándares internacionales de justicia laboral.
+                        </p>
+                    </div>
+
+                    <h2 className="text-xl pt-2">
+                        <strong>Idea clave</strong>
+                    </h2>
+                    <div className="pl-4">
+                        <p>
+                            La brecha salarial puede prevenirse cuando las decisiones sobre remuneración se basan en criterios objetivos como las responsabilidades, competencias, experiencia y condiciones del puesto, garantizando igualdad para trabajos de igual valor.
+                        </p>
+                    </div>
                 </div>
-
             </section>
 
             {/* ---------- Video ---------- */}
@@ -380,19 +566,20 @@ function Unidad3() {
                 <h1 className="text-2xl mb-4">
                     <strong>🎥 Video: Entendiendo la brecha salarial </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <p>
-                        <a
-                            href="https://www.youtube.com/watch?v=4XogaxzHEEA"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="underline text-blue-700"
-                        >
-                            ¿Por qué los hombres ganan más que las mujeres?
-                        </a>
-                    </p>
-
-                    <VideoBase src="https://drive.google.com/file/d/1aBi0NNchN0yBuxhgET6BrFk8wgFLAzCs/preview" title="¿Por qué los hombres ganan más que las mujeres?" />
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4 space-y-4">
+                        <p>
+                            <a
+                                href="https://www.youtube.com/watch?v=4XogaxzHEEA"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="underline text-blue-700"
+                            >
+                                ¿Por qué los hombres ganan más que las mujeres?
+                            </a>
+                        </p>
+                        <VideoBase src="https://drive.google.com/file/d/1aBi0NNchN0yBuxhgET6BrFk8wgFLAzCs/preview" title="¿Por qué los hombres ganan más que las mujeres?" />
+                    </div>
                 </div>
             </section>
         </>
@@ -406,11 +593,13 @@ function Unidad4() {
                 <h1 className="text-2xl mb-4">
                     <strong>Objetivo de aprendizaje </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
                     <ImageBase src={img_2_4_1} />
-                    <p>
-                        Comprender el principio de igual remuneración por trabajo de igual valor y reconocer su importancia para garantizar la igualdad de oportunidades y la no discriminación en el trabajo.
-                    </p>
+                    <div className="pl-4">
+                        <p>
+                            Comprender el principio de igual remuneración por trabajo de igual valor y reconocer su importancia para garantizar la igualdad de oportunidades y la no discriminación en el trabajo.
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -419,13 +608,24 @@ function Unidad4() {
                 <h1 className="text-2xl mb-4">
                     <strong>4.1 Concepto </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <img></img>
-                    <p>
-                        La igualdad de remuneración por trabajo de igual valor significa que las personas que desempeñan puestos con responsabilidades, habilidades, conocimientos, esfuerzo y condiciones laborales equivalentes deben recibir una remuneración similar, sin importar su sexo, edad, discapacidad, origen étnico u otra condición personal. <br />
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4 space-y-4">
+                        <p>
+                            La igualdad de remuneración por trabajo de igual valor significa que las personas que desempeñan puestos con responsabilidades, habilidades, conocimientos, esfuerzo y condiciones laborales equivalentes deben recibir una remuneración similar, sin importar su sexo, edad, discapacidad, origen étnico u otra condición personal.
+                        </p>
+                        <p>
+                            Este principio busca eliminar las diferencias salariales injustificadas y promover la equidad en el lugar de trabajo.
+                        </p>
+                    </div>
 
-                        Este principio busca eliminar las diferencias salariales injustificadas y promover la equidad en el lugar de trabajo.
-                    </p>
+                    <h2 className="text-xl pt-2">
+                        <strong>Base legal en el Ecuador y diferencia con "igual trabajo"</strong>
+                    </h2>
+                    <div className="pl-4">
+                        <p>
+                            Es fundamental entender que este principio no exige únicamente pagar lo mismo a quienes tienen exactamente el mismo título de cargo (por ejemplo, dos cajeros), sino también a quienes ocupan puestos diferentes que aportan un valor equivalente a la empresa. En el Ecuador, este mandato está respaldado por el Artículo 326 (numeral 4) de la Constitución, el Convenio 100 de la OIT, el Artículo 79 del Código del Trabajo y la Ley Orgánica para la Igualdad Salarial entre Mujeres y Hombres (junto con su reglamento en el Acuerdo Ministerial Nro. MDT-2025-006), garantizando que toda retribución económica —sueldos, bonos o comisiones— sea libre de discriminación.
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -434,70 +634,74 @@ function Unidad4() {
                 <h1 className="text-2xl mb-4">
                     <strong>4.2 Aplicación Empresarial </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <img></img>
-                    <p>Para determinar si dos puestos tienen igual valor, las empresas deben realizar una evaluación objetiva considerando: </p>
-                    <ul className="pl-4 space-y-1">
-                        <li>✅ Formación requerida.</li>
-                        <li>✅ Experiencia necesaria.</li>
-                        <li>✅ Responsabilidades asignadas.</li>
-                        <li>✅ Esfuerzo fisico o mental requerido.</li>
-                        <li>✅ Condiciones en las que se desarrolla el trabajo.</li>
-                    </ul>
-                    <h2>
-                        <strong>
-                            ¿Qué significa una evaluación objetiva?
-                        </strong>
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4 space-y-2">
+                        <p>Para determinar si dos puestos tienen igual valor, las empresas deben realizar una evaluación objetiva considerando:</p>
+                        <ul className="pl-4 space-y-1">
+                            <li>✅ Formación requerida.</li>
+                            <li>✅ Experiencia necesaria.</li>
+                            <li>✅ Responsabilidades asignadas.</li>
+                            <li>✅ Esfuerzo físico o mental requerido.</li>
+                            <li>✅ Condiciones en las que se desarrolla el trabajo.</li>
+                        </ul>
+                    </div>
+
+                    <h2 className="text-xl pt-2">
+                        <strong>¿Qué significa una evaluación objetiva?</strong>
                     </h2>
-                    <p>
+                    <div className="pl-4 space-y-2">
+                        <p>
+                            Una evaluación objetiva analiza los puestos utilizando criterios claros y verificables, evitando preferencias personales, prejuicios o discriminación.
+                        </p>
+                        <p>No debe basarse en:</p>
+                        <ul className="pl-4 space-y-1">
+                            <li>❌ Género.</li>
+                            <li>❌ Edad.</li>
+                            <li>❌ Apariencia física.</li>
+                            <li>❌ Relaciones personales.</li>
+                            <li>❌ Opiniones subjetivas.</li>
+                        </ul>
+                    </div>
 
-                        Una evaluación objetiva analiza los puestos utilizando criterios claros y verificables, evitando preferencias personales, prejuicios o discriminación. <br />
-
-                        No debe basarse en:
-                    </p>
-                    <ul className="pl-4 space-y-1">
-                        <li>❌ Género.</li>
-                        <li>❌ Edad.</li>
-                        <li>❌ Apariencia fisica.</li>
-                        <li>❌ Relaciones personales.</li>
-                        <li>❌ Opiniones subjetivas.</li>
-                    </ul>
+                    <h2 className="text-xl pt-2">
+                        <strong>¿Cómo se realiza una valoración objetiva de puestos?</strong>
+                    </h2>
+                    <div className="pl-4">
+                        <p>
+                            Para evitar decisiones arbitrarias, las áreas de Talento Humano utilizan sistemas de valoración por puntos o factores objetivos. Se asigna un puntaje técnico a cada cargo según el nivel de estudios requerido, los años de experiencia, el manejo de presupuestos o personal a cargo, el esfuerzo físico o mental y los riesgos del entorno. Si dos puestos distintos obtienen un puntaje total equivalente, deben ubicarse en la misma banda salarial, independientemente de si son ocupados por hombres o por mujeres.
+                        </p>
+                    </div>
                 </div>
             </section>
 
             {/* ---------- 4.3 ---------- */}
             <section className="mb-12">
                 <h1 className="text-2xl mb-4">
-                    <strong>4.3 Beneficios de la Igualdad Salarial</strong>
+                    <strong>4.3 Beneficios de la Igualdad Salarial </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-
-                    <p>
-                        La aplicación de estee principio permite:
-
-                    </p>
-
-                    <ul className="pl-4 space-y-1">
-                        <li>✅  Promover la equidad salarial</li>
-                        <li>✅ Reducir la discriminación</li>
-                        <li>✅ Mejorar el clima laboral.</li>
-                        <li>✅ Incrementar la motivación de las personas trabajadoras.</li>
-                        <li>✅  Fortalecer la transperencia y confienza dentro de la organización</li>
-                    </ul>
-
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4 space-y-2">
+                        <p>La aplicación de este principio permite:</p>
+                        <ul className="pl-4 space-y-1">
+                            <li>✅ Promover la equidad salarial.</li>
+                            <li>✅ Reducir la discriminación.</li>
+                            <li>✅ Mejorar el clima laboral.</li>
+                            <li>✅ Incrementar la motivación de las personas trabajadoras.</li>
+                            <li>✅ Fortalecer la transparencia y confianza dentro de la organización.</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
+
             {/* ---------- 4.4 ---------- */}
             <section className="mb-12">
                 <h1 className="text-2xl mb-4">
                     <strong>4.4 Ejemplos Prácticos </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <img></img>
-
-                    <h3 className="text-lg pt-2">
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <h2 className="text-xl">
                         <strong>Ejemplo 1 </strong>
-                    </h3>
+                    </h2>
                     <div className="pl-4 space-y-2">
                         <p>
                             Una Analista de Compras y una Analista de Logística tienen niveles similares de responsabilidad, formación requerida y toma de decisiones.
@@ -507,9 +711,9 @@ function Unidad4() {
                         </p>
                     </div>
 
-                    <h3 className="text-lg pt-2">
+                    <h2 className="text-xl pt-2">
                         <strong>Ejemplo 2 </strong>
-                    </h3>
+                    </h2>
                     <div className="pl-4 space-y-2">
                         <p>
                             Dos personas realizan las mismas funciones y poseen responsabilidades equivalentes. Una es hombre y otra mujer.
@@ -519,18 +723,16 @@ function Unidad4() {
                         </p>
                     </div>
 
-                    <h3 className="text-lg pt-2">
+                    <h2 className="text-xl pt-2">
                         <strong>Recuerda </strong>
-                    </h3>
+                    </h2>
                     <div className="pl-4">
-
-                        <ul className="space-y-1">
+                        <ul className="pl-4 space-y-1">
                             <li>✅ Trabajo de igual valor = remuneración equivalente.</li>
                             <li>✅ La evaluación de puestos debe ser objetiva.</li>
                             <li>✅ La formación y experiencia son factores importantes para valorar un puesto.</li>
                             <li>✅ El género no debe influir en la remuneración.</li>
                         </ul>
-
                     </div>
                 </div>
             </section>
@@ -540,16 +742,28 @@ function Unidad4() {
                 <h1 className="text-2xl mb-4">
                     <strong>🎥 Video: ¿Qué es Trabajo de Igual Valor? </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4">
+                        <VideoBase src="https://drive.google.com/file/d/1PUKVHqFc1Bj87ikDrzbvFNhxe8Usdf5X/preview" title='¿Qué es Trabajo de Igual Valor?' />
+                    </div>
+                </div>
+            </section>
 
-                    <VideoBase src="https://drive.google.com/file/d/1PUKVHqFc1Bj87ikDrzbvFNhxe8Usdf5X/preview" title='¿Qué es Trabajo de Igual Valor?' />
-                    <PreguntaPractica
-                        contexto="María y Carlos ocupan cargos equivalentes y tienen responsabilidades similares. María recibe $1.200 y Carlos $1.500."
-                        pregunta="¿Se debería revisar la situación salarial?"
-                        opciones={['Sí', 'No']}
-                        correcta="Sí"
-                        explicacion="Cuando dos personas ocupan cargos equivalentes con responsabilidades similares, deben recibir una remuneración equivalente. La diferencia de $300 debe revisarse para confirmar que se basa en criterios objetivos y no en el género."
-                    />
+            {/* ---------- Caso Práctico ---------- */}
+            <section className="mb-12">
+                <h1 className="text-2xl mb-4">
+                    <strong>Caso Práctico </strong>
+                </h1>
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4">
+                        <PreguntaPractica
+                            contexto="María y Carlos ocupan cargos equivalentes y tienen responsabilidades similares. María recibe $1.200 y Carlos $1.500."
+                            pregunta="¿Se debería revisar la situación salarial?"
+                            opciones={['Sí', 'No']}
+                            correcta="Sí"
+                            explicacion="Cuando dos colaboradores ocupan cargos equivalentes con responsabilidades similares y existe una diferencia de $300 dólares sin un sustento objetivo (como mayor antigüedad comprobada, certificaciones especializadas exigidas por el puesto o cumplimiento de metas variables transparentes), la empresa debe auditar y nivelar la remuneración de María. Además, bajo el Acuerdo Ministerial MDT-2025-006, si persiste una discriminación salarial injustificada, la persona trabajadora tiene derecho a presentar un reclamo interno ante Talento Humano (en el sector público) o una denuncia ante el Inspector del Trabajo (en el sector privado)."
+                        />
+                    </div>
                 </div>
             </section>
         </>
@@ -563,132 +777,185 @@ function Unidad5() {
                 <h1 className="text-2xl mb-4">
                     <strong>Objetivo de aprendizaje </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <p>
-                        Identificar sesgos que pueden influir en decisiones laborales.
-                    </p>
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4">
+                        <p>
+                            Identificar sesgos que pueden influir en decisiones laborales.
+                        </p>
+                    </div>
                 </div>
             </section>
 
             {/* ---------- 5.1 ---------- */}
             <section className="mb-12">
                 <h1 className="text-2xl mb-4">
-                    <strong>5.1. ¿Qué son los sesgos inconscientes?  </strong>
+                    <strong>5.1 ¿Qué son los sesgos inconscientes? </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4 space-y-4">
+                        <p>
+                            Son percepciones, ideas o creencias automáticas que pueden influir en nuestras decisiones sin que seamos plenamente conscientes de ello.
+                        </p>
+                        <p>
+                            Los sesgos pueden llevar a realizar juicios o tomar decisiones basadas en estereotipos en lugar de considerar las capacidades, méritos o competencias de las personas.
+                        </p>
+                    </div>
 
-                    <p>
-                        Son percepciones, ideas o creencias automáticas que pueden influir en nuestras decisiones sin que seamos plenamente conscientes de ello. <br />
-                        Los sesgos pueden llevar a realizar juicios o tomar decisiones basadas en estereotipos en lugar de considerar las capacidades, méritos o competencias de las personas.
-                    </p>
-
-
+                    <h2 className="text-xl pt-2">
+                        <strong>¿Por qué ocurren los sesgos inconscientes?</strong>
+                    </h2>
+                    <div className="pl-4">
+                        <p>
+                            Nuestro cerebro recibe millones de estímulos cada segundo y utiliza "atajos mentales" basados en nuestra crianza, experiencias pasadas y entorno cultural para tomar decisiones rápidas. Aunque este mecanismo es natural en el ser humano, en el ámbito laboral resulta peligroso: hace que prefiramos inconscientemente a personas que se parecen a nosotros (<strong>sesgo de afinidad</strong>) o que juzguemos el potencial de un compañero por su apariencia o género en lugar de revisar sus resultados reales.
+                        </p>
+                    </div>
                 </div>
             </section>
-            {/* ---------- 5.2---------- */}
+
+            {/* ---------- 5.2 ---------- */}
             <section className="mb-12">
                 <h1 className="text-2xl mb-4">
                     <strong>5.2 Tipos de Sesgos </strong>
                 </h1>
-                <ul className="list-disc pl-6 space-y-1">
-                    <li>Sesgo de género.</li>
-                    <li>Sesgo de edad.</li>
-                    <li>Sesgo por apariencia.</li>
-                    <li>Sesgo cultural.</li>
-                </ul>
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4">
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li>Sesgo de género.</li>
+                            <li>Sesgo de edad.</li>
+                            <li>Sesgo por apariencia.</li>
+                            <li>Sesgo cultural.</li>
+                        </ul>
+                    </div>
+
+                    <h2 className="text-xl pt-2">
+                        <strong>¿Cómo se manifiestan estos sesgos en la rutina laboral?</strong>
+                    </h2>
+                    <div className="pl-4">
+                        <ul className="list-disc pl-6 space-y-2">
+                            <li>
+                                <strong>Sesgo de género:</strong> Asumir que una madre trabajadora no querrá viajar o asumir un proyecto exigente por cuidar a sus hijos, sin siquiera preguntarle su disponibilidad.
+                            </li>
+                            <li>
+                                <strong>Sesgo de edad:</strong> Suponer que una persona mayor de 50 años no podrá adaptarse a nuevas herramientas digitales, o que un joven recién graduado carece de compromiso.
+                            </li>
+                            <li>
+                                <strong>Sesgo por apariencia:</strong> Asociar la vestimenta, el acento regional o el aspecto físico con la capacidad intelectual o profesional de alguien.
+                            </li>
+                            <li>
+                                <strong>Sesgo de confirmación:</strong> Buscar únicamente los errores de un colaborador del que ya tenemos una mala impresión inicial, ignorando sus aciertos.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </section>
+
             {/* ---------- 5.3 ---------- */}
             <section className="mb-12">
                 <h1 className="text-2xl mb-4">
-                    <strong>5.3 ¿Cómo reducir los sesgos en el trabajo?</strong>
+                    <strong>5.3 ¿Cómo reducir los sesgos en el trabajo? </strong>
                 </h1>
-                <p className="mb-4">
-                    Las organizaciones pueden reducir el impacto de los sesgos mediante:
-
-                </p>
-                <ul className="list-disc pl-6 space-y-1">
-                    <li>✅ Capacitación y sensibilización. </li>
-                    <li>✅ Evaluaciones basadas en criterios objetivos. </li>
-                    <li>✅ Procesos de selección transparentes.  </li>
-                    <li>✅ Decisiones fundamentadas en méritos y competencias.  </li>
-                    <li>✅ Igualdad de oportunidades para todas las personas. </li>
-
-                </ul>
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4 space-y-2">
+                        <p>Las organizaciones pueden reducir el impacto de los sesgos mediante:</p>
+                        <ul className="pl-4 space-y-1">
+                            <li>✅ Capacitación y sensibilización.</li>
+                            <li>✅ Evaluaciones basadas en criterios objetivos.</li>
+                            <li>✅ Procesos de selección transparentes.</li>
+                            <li>✅ Decisiones fundamentadas en méritos y competencias.</li>
+                            <li>✅ Igualdad de oportunidades para todas las personas.</li>
+                        </ul>
+                    </div>
+                </div>
             </section>
 
-            {/*----------- 5.4 ------------*/}
-
+            {/* ---------- 5.4 ---------- */}
             <section className="mb-12">
                 <h1 className="text-2xl mb-4">
                     <strong>5.4 Efectos en las Decisiones Laborales </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4 space-y-2">
+                        <p>Pueden afectar:</p>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li>Contrataciones.</li>
+                            <li>Ascensos.</li>
+                            <li>Evaluaciones.</li>
+                            <li>Capacitaciones.</li>
+                        </ul>
+                    </div>
 
-                    <p>Pueden afectar:</p>
-                    <ul className="list-disc pl-6 space-y-1">
-                        <li>Contrataciones.</li>
-                        <li>Ascensos.</li>
-                        <li>Evaluaciones.</li>
-                        <li>Capacitaciones.</li>
-                    </ul>
+                    <h2 className="text-xl pt-2">
+                        <strong>Impacto directo en el salario y crecimiento</strong>
+                    </h2>
+                    <div className="pl-4">
+                        <p>
+                            Cuando los sesgos inconscientes no se controlan, afectan directamente la asignación de proyectos estratégicos (dando las tareas más visibles solo a un grupo) y las evaluaciones de desempeño anuales. Como resultado, quienes sufren sesgos reciben calificaciones más bajas, menos bonos y menores aumentos salariales, alimentando silenciosamente la brecha salarial dentro de la empresa.
+                        </p>
+                    </div>
+
                     <ImageBase src={img_2_5_1} />
                 </div>
             </section>
-            <section>
-                <h1 className="text-2xl mb-4">
-                    <strong>
-                        5.5. ¿Por qué es importante identificar los sesgos?
-                    </strong>
-                </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7 ">
-                    <ul className="list-disc pl-6 space-y-1 ">
-                        <li>✅ Favorece decisiones más justas. </li>
-                        <li>✅ Favorece decisiones más justas. </li>
-                        <li>✅ Reduce la discriminación. </li>
-                        <li>✅ Contribuye a ambientes laborales respetuosos e inclusivos. </li>
-                    </ul>
 
+            {/* ---------- 5.5 ---------- */}
+            <section className="mb-12">
+                <h1 className="text-2xl mb-4">
+                    <strong>5.5 ¿Por qué es importante identificar los sesgos? </strong>
+                </h1>
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4">
+                        <ul className="pl-4 space-y-1">
+                            <li>✅ Favorece decisiones más justas.</li>
+                            <li>✅ Promueve la igualdad de oportunidades.</li>
+                            <li>✅ Reduce la discriminación.</li>
+                            <li>✅ Contribuye a ambientes laborales respetuosos e inclusivos.</li>
+                        </ul>
+                    </div>
+
+                    <h2 className="text-xl pt-2">
+                        <strong>Ejemplo práctico </strong>
+                    </h2>
+                    <div className="pl-4 space-y-2">
+                        <p>
+                            Una empresa realiza un proceso de selección para cubrir una vacante de supervisión. Durante la revisión de candidatos, algunas personas consideran que un trabajador joven no tiene la experiencia suficiente únicamente por su edad, sin analizar sus competencias ni resultados.
+                        </p>
+                        <p>
+                            <strong>Análisis:</strong> La decisión podría verse influenciada por un sesgo de edad. Las decisiones laborales deben basarse en criterios objetivos, méritos y competencias, evitando estereotipos o prejuicios.
+                        </p>
+                    </div>
                 </div>
             </section>
 
-            <h3 className="text-lg pt-2">
-                <strong>Ejemplo Práctico </strong>
-            </h3>
-            <div className="pl-4 space-y-2 pt-2">
-                <p>Una empresa realiza un proceso de selección para cubrir una vacante de supervisión. Durante la revisión de candidatos, algunas personas consideran que un trabajador joven no tiene la experiencia suficiente únicamente por su edad, sin analizar sus competencias ni resultados. </p>
-                <p>
-                    <strong>Análisis:</strong> La decisión podría verse influenciada por un sesgo de edad. Las decisiones laborales deben basarse en criterios objetivos, méritos y competencias, evitando estereotipos o prejuicios.
-                </p>
-            </div>
             {/* ---------- Video ---------- */}
             <section className="mb-12">
                 <h1 className="text-2xl mb-4">
                     <strong>🎥 Video: Cómo identificar nuestros sesgos </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <p>
-                        <a
-                            href="https://www.youtube.com/watch?v=YAP7vzTV1cY"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="underline text-blue-700"
-                        >
-                            Los sesgos inconscientes y su efecto en el entorno laboral
-                        </a>
-                    </p>
-
-                    <VideoBase src="https://drive.google.com/file/d/1RLyHDygYj78J1-eNjE8_LzMRvH6ycYpu/preview" title="Los sesgos inconscientes y su efecto en el entorno laboral" />
-                    <SeleccionMultiple
-                        pregunta="Identifique cuáles son sesgos."
-                        opciones={[
-                            'Los hombres son mejores líderes',
-                            'Debe evaluarse el desempeño objetivamente',
-                            'Las mujeres no pueden dirigir equipos',
-                            'Las competencias deben guiar las decisiones',
-                        ]}
-                        correctas={['Los hombres son mejores líderes', 'Las mujeres no pueden dirigir equipos']}
-                        explicacion="Estas afirmaciones son sesgos porque juzgan a las personas por su género y no por sus capacidades. En cambio, evaluar el desempeño objetivamente y guiarse por las competencias son buenas prácticas que ayudan a evitar los sesgos."
-                    />
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4 space-y-4">
+                        <p>
+                            <a
+                                href="https://www.youtube.com/watch?v=YAP7vzTV1cY"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="underline text-blue-700"
+                            >
+                                Los sesgos inconscientes y su efecto en el entorno laboral
+                            </a>
+                        </p>
+                        <VideoBase src="https://drive.google.com/file/d/1RLyHDygYj78J1-eNjE8_LzMRvH6ycYpu/preview" title="Los sesgos inconscientes y su efecto en el entorno laboral" />
+                        <SeleccionMultiple
+                            pregunta="Identifique cuáles son sesgos."
+                            opciones={[
+                                'Los hombres son mejores líderes',
+                                'Debe evaluarse el desempeño objetivamente',
+                                'Las mujeres no pueden dirigir equipos',
+                                'Las competencias deben guiar las decisiones',
+                            ]}
+                            correctas={['Los hombres son mejores líderes', 'Las mujeres no pueden dirigir equipos']}
+                            explicacion="Estas afirmaciones son sesgos porque juzgan a las personas por su género y no por sus capacidades. En cambio, evaluar el desempeño objetivamente y guiarse por las competencias son buenas prácticas que ayudan a evitar los sesgos."
+                        />
+                    </div>
                 </div>
             </section>
         </>
@@ -702,11 +969,15 @@ function Unidad6() {
                 <h1 className="text-2xl mb-4">
                     <strong>Objetivo de aprendizaje </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <p>
-                        Identificar acciones que promueven la igualdad salarial en las organizaciones.
-                    </p>
-
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4 space-y-4">
+                        <p>
+                            Identificar acciones que promueven la igualdad salarial en las organizaciones.
+                        </p>
+                        <p>
+                            Asimismo, usted conocerá las herramientas prácticas que las empresas en el Ecuador aplican para auditar sus escalas remunerativas, garantizar ascensos justos y cumplir con las obligaciones de sensibilización y certificación establecidas por el Ministerio del Trabajo.
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -715,19 +986,41 @@ function Unidad6() {
                 <h1 className="text-2xl mb-4">
                     <strong>6.1 Transparencia Salarial </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4">
+                        <p>
+                            Implica que existan criterios claros para la determinación de remuneraciones.
+                        </p>
+                    </div>
 
-                    <p>
-                        Implica que existan criterios claros para la determinación de remuneraciones.
-                    </p>
-                    <h2><strong>Beneficios</strong></h2>
-                    <ul className="pl-4 space-y-1">
-                        <li>✅ Permite identificar posibles diferencias injustificadas. </li>
-                        <li>✅ Favorece la igualdad salarial. </li>
-                        <li>✅ Promueve la confianza dentro de la organización. </li>
-                        <li>✅ Contribuye a detectar inequidades salariales. </li>
-                    </ul>
+                    <h2 className="text-xl pt-2">
+                        <strong>Beneficios</strong>
+                    </h2>
+                    <div className="pl-4">
+                        <ul className="pl-4 space-y-1">
+                            <li>✅ Permite identificar posibles diferencias injustificadas.</li>
+                            <li>✅ Favorece la igualdad salarial.</li>
+                            <li>✅ Promueve la confianza dentro de la organización.</li>
+                            <li>✅ Contribuye a detectar inequidades salariales.</li>
+                        </ul>
+                    </div>
 
+                    <h2 className="text-xl pt-2">
+                        <strong>¿Cómo se aplica la transparencia salarial en la empresa?</strong>
+                    </h2>
+                    <div className="pl-4 space-y-2">
+                        <p>
+                            La transparencia no significa publicar el rol de pagos privado de cada compañero en una cartelera, sino garantizar que las reglas del juego sean claras y conocidas por todos. Esto implica contar con:
+                        </p>
+                        <ul className="list-disc pl-6 space-y-2">
+                            <li>
+                                <strong>Bandas o escalas salariales definidas:</strong> Rangos mínimos y máximos de sueldo establecidos técnicamente para cada nivel de cargo.
+                            </li>
+                            <li>
+                                <strong>Políticas claras de bonos e incentivos:</strong> Indicadores medibles (como cumplimiento de metas de ventas, calidad o productividad) para que cualquier colaborador sepa exactamente qué debe lograr para acceder a una bonificación o aumento, sin depender de favoritismos.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
@@ -736,15 +1029,30 @@ function Unidad6() {
                 <h1 className="text-2xl mb-4">
                     <strong>6.2 Evaluación Objetiva </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <img></img>
-                    <p>Las decisiones deben basarse en:</p>
-                    <ul className="pl-4 space-y-1">
-                        <li>✅ Competencias.</li>
-                        <li>✅ Desempeño.</li>
-                        <li>✅ Responsabilidades.</li>
-                        <li>✅ Resultados.</li>
-                    </ul>
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4 space-y-2">
+                        <p>Las decisiones deben basarse en:</p>
+                        <ul className="pl-4 space-y-1">
+                            <li>✅ Competencias.</li>
+                            <li>✅ Desempeño.</li>
+                            <li>✅ Responsabilidades.</li>
+                            <li>✅ Resultados.</li>
+                        </ul>
+                    </div>
+
+                    <h2 className="text-xl pt-2">
+                        <strong>Herramientas para evitar evaluaciones subjetivas</strong>
+                    </h2>
+                    <div className="pl-4 space-y-2">
+                        <p>
+                            Para que las evaluaciones de desempeño sean verdaderamente justas y no afecten el salario de las personas trabajadoras, las organizaciones aplican buenas prácticas como:
+                        </p>
+                        <ul className="list-disc pl-6 space-y-2">
+                            <li>Utilizar indicadores cuantificables y verificables previamente acordados entre el supervisor y el colaborador al inicio del período.</li>
+                            <li>Aplicar evaluaciones 360° o comités de calibración, donde varias personas revisan los resultados para evitar que el prejuicio personal de un solo jefe perjudique a un trabajador.</li>
+                            <li>Garantizar que los períodos de licencia por maternidad, paternidad o calamidad doméstica nunca penalicen la calificación anual de desempeño de una persona.</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
@@ -753,57 +1061,99 @@ function Unidad6() {
                 <h1 className="text-2xl mb-4">
                     <strong>6.3 Promoción Basada en Méritos </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4 space-y-2">
+                        <p>Los ascensos deben considerar:</p>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li>Conocimientos.</li>
+                            <li>Experiencia.</li>
+                            <li>Resultados.</li>
+                            <li>Competencias demostradas.</li>
+                        </ul>
+                    </div>
 
-                    <p>Los ascensos deben considerar:</p>
-                    <ul className="list-disc pl-6 space-y-1">
-                        <li>Conocimientos.</li>
-                        <li>Experiencia.</li>
-                        <li>Resultados.</li>
-                        <li>Competencias demostradas.</li>
-                    </ul>
+                    <h2 className="text-xl pt-2">
+                        <strong>Buenas prácticas en procesos de ascenso interno</strong>
+                    </h2>
+                    <div className="pl-4">
+                        <ul className="list-disc pl-6 space-y-2">
+                            <li>
+                                <strong>Convocatorias internas abiertas:</strong> Publicar todas las vacantes de ascenso para que cualquier trabajador que cumpla el perfil pueda postular en igualdad de condiciones, evitando designaciones "a dedo".
+                            </li>
+                            <li>
+                                <strong>Planes de carrera y mentoría:</strong> Brindar oportunidades de formación en liderazgo tanto a mujeres como a hombres, asegurando que el acceso a cargos directivos sea equitativo y transparente.
+                            </li>
+                        </ul>
+                    </div>
+
                     <ImageBase src={img_2_6_1} />
                 </div>
             </section>
-            {/*---------- 6.4 -----------*/}
+
+            {/* ---------- 6.4 ---------- */}
             <section className="mb-12">
                 <h1 className="text-2xl mb-4">
-                    <strong>6.4 Beneficios de la Igualdad Salarial  </strong>
+                    <strong>6.4 Beneficios de la Igualdad Salarial </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4">
+                        <p>La igualdad salarial genera beneficios tanto para las personas trabajadoras como para las organizaciones.</p>
+                    </div>
 
-                    <p>La igualdad salarial genera beneficios tanto para las personas trabajadoras como para las organizaciones. </p>
-                    <h2><strong>Beneficios principales</strong></h2>
-                    <ul className=" pl-6 space-y-1">
-                        <li>✅ Fortalece el clima laboral. </li>
-                        <li>✅ Incrementa el compromiso de los trabajadores. </li>
-                        <li>✅ Reduce conflictos laborales. </li>
-                        <li>✅ Promueve la igualdad de oportunidades. </li>
-                        <li>✅ Mejora la reputación organizacional. </li>
-                    </ul>
+                    <h2 className="text-xl pt-2">
+                        <strong>Beneficios principales</strong>
+                    </h2>
+                    <div className="pl-4">
+                        <ul className="pl-4 space-y-1">
+                            <li>✅ Fortalece el clima laboral.</li>
+                            <li>✅ Incrementa el compromiso de los trabajadores.</li>
+                            <li>✅ Reduce conflictos laborales.</li>
+                            <li>✅ Promueve la igualdad de oportunidades.</li>
+                            <li>✅ Mejora la reputación organizacional.</li>
+                        </ul>
+                    </div>
 
-                    <h3 className=" pt-2">
-                        <strong>Ejemplo Práctico </strong>
-                    </h3>
-                    <div className="pl-4 space-y-2 pt-2">
-                        <p>La empresa realiza una revisión de salarios y detecta que dos personas que desempeñan funciones equivalentes reciben remuneraciones diferentes. Después de analizar las responsabilidades, competencias y resultados de ambos puestos, la organización ajusta la remuneración utilizando criterios objetivos. </p>
+                    <h2 className="text-xl pt-2">
+                        <strong>Auditorías salariales y canales de reporte en el Ecuador</strong>
+                    </h2>
+                    <div className="pl-4">
+                        <p>
+                            Como parte de las buenas prácticas exigidas por la Ley Orgánica para la Igualdad Salarial entre Mujeres y Hombres y el Acuerdo Ministerial Nro. MDT-2025-006, las organizaciones deben realizar revisiones periódicas de sus remuneraciones y sensibilizar a todo su personal (incluyendo a los directivos). Asimismo, deben mantener canales internos confidenciales para que cualquier persona trabajadora que detecte una posible brecha salarial injustificada pueda solicitar una revisión técnica sin temor a represalias.
+                        </p>
+                    </div>
+
+                    <h2 className="text-xl pt-2">
+                        <strong>Ejemplo práctico </strong>
+                    </h2>
+                    <div className="pl-4 space-y-2">
+                        <p>
+                            La empresa realiza una revisión de salarios y detecta que dos personas que desempeñan funciones equivalentes reciben remuneraciones diferentes. Después de analizar las responsabilidades, competencias y resultados de ambos puestos, la organización ajusta la remuneración utilizando criterios objetivos.
+                        </p>
                         <p>
                             <strong>Análisis:</strong> La transparencia salarial y la evaluación objetiva permiten identificar diferencias injustificadas y promover la igualdad salarial dentro de la organización.
                         </p>
                     </div>
                 </div>
-
             </section>
 
-            {/* ---------- Video ---------- */}
+            {/* ---------- Cierre ---------- */}
             <section className="mb-12">
                 <h1 className="text-2xl mb-4">
-                    <strong>🎥 Video: Desafío De La Igualdad    </strong>
+                    <strong>Cierre y compromiso del Módulo 2 </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <div className="pl-4">
+                        <p>
+                            La igualdad salarial y de género no se logra únicamente con leyes; se construye todos los días mediante procesos transparentes, evaluaciones basadas en méritos y el compromiso de cada integrante de la organización por erradicar prejuicios. Al finalizar esta unidad, usted cuenta con las herramientas necesarias para reconocer y promover un entorno laboral justo, equitativo y libre de discriminación en el Ecuador.
+                        </p>
+                    </div>
 
-
-                    <VideoBase src="https://drive.google.com/file/d/1MZSI710KVUtpssFMuPy-EkUDz_Gzsi21/preview" title="Igualdad en las empresas. Barreras y sesgos de género en el ámbito laboral" />
+                    <h2 className="text-xl pt-2">
+                        <strong>🎥 Video: Desafío de la Igualdad </strong>
+                    </h2>
+                    <div className="pl-4">
+                        <VideoBase src="https://drive.google.com/file/d/1MZSI710KVUtpssFMuPy-EkUDz_Gzsi21/preview" title="Igualdad en las empresas. Barreras y sesgos de género en el ámbito laboral" />
+                    </div>
                 </div>
             </section>
         </>
