@@ -48,7 +48,7 @@ function Unidad1() {
                     <strong>1.1 Conceptos Generales </strong>
                 </h1>
                 <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <img></img>
+
                     <p>
                         La violencia laboral es cualquier acción, conducta o comportamiento que cause daño físico, psicológico, verbal, sexual o económico a una persona dentro del entorno de trabajo.
                     </p>
@@ -68,6 +68,17 @@ function Unidad1() {
                             <li>La reputación de la empresa.</li>
                         </ul>
                     </div>
+
+                    <h3 className='text-lg'><strong>Respaldo legal en el Ecuador</strong> </h3>
+
+                    <div className='pl-4'>
+                        <p>En nuestro país, la Constitución (Art. 66 numeral 3 y Art. 331) y el Convenio 190 de la OIT (ratificado por el Ecuador) garantizan el derecho a una vida y a un entorno laboral libre de cualquier forma de violencia. Asimismo, el Código del Trabajo y el Acuerdo Ministerial MDT-2017-082 obligan a todos los empleadores a implementar programas de prevención de riesgos psicosociales y erradicación de la violencia en los centros de trabajo.</p>
+                    </div>
+                </div>
+
+
+                <div>
+
                 </div>
             </section>
 
@@ -167,11 +178,14 @@ function Unidad1() {
                     </ul>
 
                     <p>
-                        <strong>Idea Clave:</strong>
-                        <br />
+                        <strong>Idea Clave:</strong></p>
+                    <p className='pl-4'>
                         La violencia laboral no debe normalizarse ni mantenerse en silencio. Reportarla oportunamente permite adoptar medidas de protección y prevenir que la situación continúe.
                     </p>
-
+                    <h3 className='text-lg'><strong>¿Qué pruebas son útiles para respaldar un reporte?</strong></h3>
+                    <p className='pl-4'>
+                        Si usted o un compañero atraviesan una situación de violencia laboral, es recomendable anotar fechas, horas, lugares y nombres de posibles testigos, así como conservar correos electrónicos, mensajes de texto o notas que demuestren la conducta agresiva. La denuncia interna es confidencial y la empresa tiene el deber legal de proteger a quien reporta contra cualquier represalia.
+                    </p>
 
                 </div>
                 <div className="ml-4 leading-7">
@@ -214,14 +228,18 @@ function Unidad2() {
                 <h1 className="text-2xl mb-4">
                     <strong>2.1 ¿Qué es el acoso laboral? </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <img></img>
+                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7 pb-4">
+
                     <p>
                         El acoso laboral o <em>mobbing</em> consiste en conductas repetidas que buscan intimidar, humillar, aislar o perjudicar a un trabajador o trabajadora.
                     </p>
                     <p>
                         Estas conductas afectan la dignidad, generan estrés y deterioran el ambiente de trabajo.
                     </p>
+                </div>
+                <h2 className='text-xl pl-4 pb-2'> <strong>Definición legal en el Ecuador (Código del Trabajo)</strong></h2>
+                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                    De acuerdo con el Artículo <strong>46.1 del Código del Trabajo del Ecuador</strong>, se entiende por acoso laboral todo comportamiento atentatorio a la dignidad de la persona, ejercido de forma reiterada, y potencialmente lesivo, cometido en el lugar de trabajo o en cualquier momento en contra de una de las partes de la relación laboral o entre trabajadores, que tenga como resultado para la persona afectada su menoscabo, maltrato, humillación, o bien que amenace o perjudique su situación laboral. Este acoso puede ser descendente (de un jefe a un subordinado), <strong> horizontal</strong> (entre compañeros del mismo nivel) o <strong>ascendente</strong> (de subordinados hacia un superior).
                 </div>
             </section>
 
@@ -282,7 +300,7 @@ function Unidad2() {
                 <h1 className="text-2xl mb-4">
                     <strong>2.4 Consecuencias del Acoso Laboral </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7 pb-4">
 
                     <p>Un desacuerdo ocasional entre compañeros no necesariamente constituye acoso laboral.
 
@@ -302,8 +320,17 @@ function Unidad2() {
 
                         Las humillaciones constantes durante varios meses sí pueden constituir acoso laboral.
 
-                        Esto fortalece mucho la capacitación. </p>
+                    </p>
                 </div>
+                <h3 className='text-lg pl-6 pb-2'>
+                    <strong>
+                        ¿Qué NO es acoso laboral?
+                    </strong>
+
+                </h3>
+                <p className='pl-8'>
+                    Es importante distinguir el acoso de las exigencias propias del trabajo. No constituye acoso laboral el ejercicio legítimo de la autoridad del empleador o supervisor cuando solicita cumplir metas razonables, exige puntualidad, evalúa el desempeño con criterios objetivos o llama la atención de manera respetuosa y en privado ante un incumplimiento de funciones.
+                </p>
             </section>
             {/* ---------- Video ---------- */}
             <section className="mb-12">
@@ -311,16 +338,7 @@ function Unidad2() {
                     <strong>🎥 Video: Identificando el acoso laboral </strong>
                 </h1>
                 <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <p>
-                        <a
-                            href="https://www.youtube.com/watch?v=QZG1Yvrk-2Y"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="underline text-blue-700"
-                        >
-                            PIEL FINA | Corto sobre Acoso Laboral | Gobierno Vasco | Departamento Economía, Trabajo y Empleo
-                        </a>
-                    </p>
+
 
                     <VideoBase src="https://drive.google.com/file/d/1h9LYdG7IfiFma6MNjCnWofjL6ouJVu_0/preview" title="IEL FINA | Corto sobre Acoso Laboral" />
                 </div>
@@ -355,8 +373,7 @@ function Unidad3() {
                 <h1 className="text-2xl mb-4">
                     <strong>3.1 Concepto </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <img></img>
+                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7 pb-4">
                     <p>
                         El acoso sexual es toda conducta de naturaleza sexual no deseada que afecta la dignidad de una persona y genera un ambiente intimidante, hostil, humillante u ofensivo.
                     </p>
@@ -364,6 +381,18 @@ function Unidad3() {
                         Puede ocurrir entre compañeros, supervisores o cualquier persona vinculada al entorno laboral.
                     </p>
                 </div>
+                <h2 className='text-lg pl-4 pb-2'>
+                    <strong>
+                        La importancia del consentimiento y la protección legal
+                    </strong>
+                </h2>
+                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <p>
+                        En el acoso sexual el elemento central es la <strong>falta de consentimiento</strong>: basta con que la conducta sea no deseada y ofensiva para que constituya una vulneración grave a la dignidad humana. En el Ecuador, el acoso sexual está severamente sancionado tanto en el ámbito laboral (siendo causal de visto bueno y sanción administrativa ante el Ministerio del Trabajo) como en el ámbito penal (Art. 166 del Código Orgánico Integral Penal - COIP). Además, el Convenio 190 de la OIT extiende esta protección a los traslados hacia y desde el trabajo, viajes laborales y comunicaciones digitales (mensajes, redes sociales o correos).
+                    </p>
+
+                </div>
+
             </section>
 
             {/* ---------- 3.2 ---------- */}
@@ -421,6 +450,17 @@ function Unidad3() {
 
                         Toda persona tiene derecho a trabajar en un ambiente libre de acoso sexual.
                     </p>
+                </div>
+                <h2 className='text-lg pl-4 pb-2'>
+                    <strong>
+                        Garantía de confidencialidad y no revictimización
+                    </strong>
+                </h2>
+                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <p>
+                        Cuando una persona reporta un caso de acoso sexual, la organización tiene la obligación de activar de inmediato su protocolo interno bajo estricta <strong>confidencialidad</strong>, garantizando que la víctima no sea expuesta públicamente, no sea obligada a confrontar directamente a su agresor y no sufra ningún tipo de represalia laboral, despido o cambio perjudicial de puesto.
+                    </p>
+
                 </div>
             </section>
 
@@ -509,6 +549,18 @@ function Unidad4() {
                             <li>Orientación sexual.</li>
                             <li>Estado civil.</li>
                         </ul>
+                    </div>
+
+                    <h3 className='text-lg'>
+                        <strong>
+                            Base legal en el Ecuador
+                        </strong>
+                    </h3>
+                    <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                        <p>
+                            En nuestro país, el <strong>Artículo 11 (numeral 2) de la Constitución y el Acuerdo Ministerial Nro. MDT-2017-082 </strong>(<em>Normativa para la Erradicación de la Discriminación en el Ámbito Laboral</em>) prohíben expresamente toda forma de exclusión, preferencia o distinción basada en características personales. En el Ecuador está prohibido exigir pruebas de embarazo, pruebas de VIH, certificados de antecedentes penales innecesarios o establecer límites de edad para acceder o permanecer en un empleo.
+                        </p>
+
                     </div>
                 </div>
             </section>
@@ -624,13 +676,24 @@ function Unidad4() {
                             <li>✅ Horarios flexibles cuando corresponda legalmente.</li>
                         </ul>
                     </div>
+                    <h3 className='text-lg'>
+                        <strong>
+                            Inclusión laboral de personas con discapacidad en Ecuador
+                        </strong>
+                    </h3>
+                    <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                        <p>
+                            De acuerdo con la Ley Orgánica de Discapacidades y el Código del Trabajo del Ecuador, toda empresa o institución pública o privada que cuente con <strong>25 o más trabajadores </strong> está obligada a contratar un mínimo del <strong>4% de personas con discapacidad </strong>(o sustitutos directos), en labores apropiadas a sus conocimientos y capacidades, garantizando los ajustes razonables en su puesto de trabajo y un ambiente libre de barreras físicas o actitudinales.
+                        </p>
+
+                    </div>
                 </div>
             </section>
 
             {/* ---------- Video ---------- */}
             <section className="mb-12">
                 <h1 className="text-2xl mb-4">
-                    <strong>🎥 Video: Discriminacion en el Trabajo </strong>
+                    <strong>🎥 Video: No a la Discriminación </strong>
                 </h1>
                 <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
 
@@ -675,7 +738,7 @@ function Unidad5() {
                 <h1 className="text-2xl mb-4">
                     <strong>5.2 Canales Internos </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7 pb-2">
                     <img></img>
                     <p>Los principales canales pueden incluir:</p>
                     <ul className="list-disc pl-6 space-y-1">
@@ -685,6 +748,18 @@ function Unidad5() {
                         <li>Canal de denuncias.</li>
                         <li>Jefatura inmediata.</li>
                     </ul>
+                </div>
+                <h3 className='text-lg'>
+                    <strong>
+                        ¿Qué hacer si el agresor es la jefatura inmediata o no hay respuesta interna?
+
+                    </strong>
+                </h3>
+                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <p>
+                        Si la persona que comete el acoso o la discriminación es su propio supervisor, usted debe acudir directamente a un nivel superior, al área de Talento Humano o al Comité de Ética. Además, en el Ecuador, ninguna denuncia interna impide que la persona trabajadora acuda directamente ante el <strong>Inspector del Trabajo </strong>(Ministerio del Trabajo) o utilice los canales oficiales de denuncia en línea de dicha cartera de Estado.
+                    </p>
+
                 </div>
             </section>
 
@@ -738,6 +813,19 @@ function Unidad5() {
                         <li>✅ Recibir información sobre el proceso cuando corresponda. </li>
                     </ul>
 
+                    <h3 className='text-lg'>
+                        <strong>
+                            Prohibición de represalias y protección legal
+
+                        </strong>
+                    </h3>
+                    <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                        <p>
+                            En el Ecuador, la normativa laboral prohíbe cualquier acto de represalia contra quien denuncia de buena fe o actúa como testigo en un caso de violencia, acoso o discriminación. Si un empleador despide a un trabajador o desmejora sus condiciones laborales como venganza por haber presentado una denuncia, dicha medida es sancionada por la autoridad laboral y puede dar lugar al reintegro o a las indemnizaciones agravadas previstas en la ley.
+                        </p>
+
+                    </div>
+
                 </div>
             </section>
 
@@ -747,16 +835,7 @@ function Unidad5() {
                     <strong>🎥 Video: ¿Qué hacer si eres víctima o testigo? </strong>
                 </h1>
                 <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <p>
-                        <a
-                            href="https://www.youtube.com/watch?v=61P3JNA2qiw"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="underline text-blue-700"
-                        >
-                            Acoso laboral en Ecuador: Cómo identificarlo y qué hacer (Sector público y privado)
-                        </a>
-                    </p>
+
 
                     <VideoBase src="https://drive.google.com/file/d/1XApaHGPOCOkGyYgu2csyKqrE9nZ7XdXX/preview" title="Acoso laboral en Ecuador: Cómo identificarlo y qué hacer" />
                 </div>
@@ -811,6 +890,17 @@ function Unidad6() {
                             <li>✅ Resolver conflictos mediante el diálogo.</li>
                         </ul>
                     </div>
+                    <h3 className='text-lg'>
+                        <strong>
+                            ¿Cómo aplicar la comunicación asertiva en momentos difíciles?
+                        </strong>
+                    </h3>
+                    <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                        <p>
+                            Comunicarse de forma asertiva significa defender nuestros derechos y expresar desacuerdos sin agredir ni humillar a la otra persona (comunicación agresiva), pero tampoco quedarnos callados permitiendo abusos (comunicación pasiva). En el trabajo, esto implica hablar en primera persona <em>("Yo considero que...", "Necesito claridad sobre...")</em>, enfocarse en los hechos o procesos y nunca atacar la dignidad o características personales del compañero.
+                        </p>
+
+                    </div>
                 </div>
             </section>
 
@@ -828,6 +918,17 @@ function Unidad6() {
                         <li>Solidaridad.</li>
                         <li>Trabajo en equipo.</li>
                     </ul>
+                    <h3 className='text-lg'>
+                        <strong>
+                            Corresponsabilidad en el clima laboral y el rol de los testigos
+                        </strong>
+                    </h3>
+                    <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                        <p>
+                            Un ambiente de trabajo saludable no depende únicamente de la gerencia o de Recursos Humanos; se construye con las acciones diarias de cada integrante del equipo. Cuando una persona presencia un comentario discriminatorio, una burla o un acto de hostigamiento y guarda silencio por comodidad, permite que la conducta negativa se normalice. Ser un <strong>testigo activo</strong>, frenar con respeto un comentario ofensivo o apoyar al compañero afectado— es una de las herramientas más efectivas para mantener una convivencia sana.
+                        </p>
+
+                    </div>
                 </div>
             </section>
 
@@ -869,6 +970,18 @@ function Unidad6() {
                             <li>✅ Colaborar con los compañeros de trabajo. </li>
                         </ul>
                     </div>
+                    <h3 className='text-lg'>
+                        <strong>
+                            Compromiso legal y cultural en el Ecuador
+
+                        </strong>
+                    </h3>
+                    <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                        <p>
+                            De acuerdo con las políticas de prevención de riesgos psicosociales del Ministerio del Trabajo del Ecuador y el<strong>Acuerdo Ministerial Nro. MDT-2025-006</strong> , tanto empleadores como trabajadores tienen el deber de participar activamente en los programas de sensibilización y respetar los protocolos internos de convivencia. Una cultura de respeto reduce el estrés laboral, previene enfermedades ocupacionales y garantiza que cada persona pueda desarrollarse plenamente.
+                        </p>
+
+                    </div>
                 </div>
             </section>
 
@@ -891,6 +1004,15 @@ function Unidad6() {
             </section>
             {/* ---------- Video ---------- */}
             <section className="mb-12">
+                <h1 className="text-2xl mb-4">
+                    <strong>Conclusión del Módulo 3</strong>
+                </h1>
+                <div className='pl-4 pb-4' >
+                    <p >
+                        Prevenir la violencia, el acoso laboral, el acoso sexual y la discriminación es una tarea compartida. Conocer nuestros derechos, utilizar los canales de denuncia con confianza y practicar la comunicación asertiva y el respeto mutuo nos permite construir espacios de trabajo seguros, inclusivos y dignos para todas las personas en el Ecuador.
+                    </p>
+                </div>
+
                 <h1 className="text-2xl mb-4">
                     <strong>🎥 Video: Construyendo un ambiente saludable </strong>
                 </h1>
