@@ -209,7 +209,7 @@ function Unidad1() {
                 </h1>
                 <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
                     <div className="pl-4">
-                        <VideoBase src="https://drive.google.com/file/d/1_OBCQHSDiXkieIuRzuBdM-KiSZBaNPud/preview" title='¿Sabes cuál es la diferencia entre sexo y género?' />
+                        <VideoBase src="https://www.youtube.com/embed/4tf7A3AJzVg?si=OnYpUSLurEz4v8o_" title='¿Sabes cuál es la diferencia entre sexo y género?' />
                     </div>
                 </div>
             </section>
@@ -332,7 +332,7 @@ function Unidad2() {
                 </h1>
                 <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
                     <div className="pl-4">
-                        <VideoBase src="https://drive.google.com/file/d/1yOTV-CdYaN-iBiqp-VjYYrO8lLFI0w7t/preview" title="Igualdad de Género" />
+                        <VideoBase src="https://www.youtube.com/embed/74LLMXsPR78?si=ymsSB378909gEPwR" title="Igualdad de Género" />
                     </div>
                 </div>
             </section>
@@ -568,17 +568,8 @@ function Unidad3() {
                 </h1>
                 <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
                     <div className="pl-4 space-y-4">
-                        <p>
-                            <a
-                                href="https://www.youtube.com/watch?v=4XogaxzHEEA"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="underline text-blue-700"
-                            >
-                                ¿Por qué los hombres ganan más que las mujeres?
-                            </a>
-                        </p>
-                        <VideoBase src="https://drive.google.com/file/d/1aBi0NNchN0yBuxhgET6BrFk8wgFLAzCs/preview" title="¿Por qué los hombres ganan más que las mujeres?" />
+
+                        <VideoBase src="https://www.youtube.com/embed/QU2V31NJNxs?si=W5HdW8bqD6Ag3TBQ" title="Brecha Salarial" />
                     </div>
                 </div>
             </section>
@@ -744,7 +735,7 @@ function Unidad4() {
                 </h1>
                 <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
                     <div className="pl-4">
-                        <VideoBase src="https://drive.google.com/file/d/1PUKVHqFc1Bj87ikDrzbvFNhxe8Usdf5X/preview" title='¿Qué es Trabajo de Igual Valor?' />
+                        <VideoBase src="https://www.youtube.com/embed/E0cEH6INHYA?si=aQOqnT4J9yko-2g_" title='¿Qué es Trabajo de Igual Valor?' />
                     </div>
                 </div>
             </section>
@@ -933,17 +924,7 @@ function Unidad5() {
                 </h1>
                 <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
                     <div className="pl-4 space-y-4">
-                        <p>
-                            <a
-                                href="https://www.youtube.com/watch?v=YAP7vzTV1cY"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="underline text-blue-700"
-                            >
-                                Los sesgos inconscientes y su efecto en el entorno laboral
-                            </a>
-                        </p>
-                        <VideoBase src="https://drive.google.com/file/d/1RLyHDygYj78J1-eNjE8_LzMRvH6ycYpu/preview" title="Los sesgos inconscientes y su efecto en el entorno laboral" />
+                        <VideoBase src="https://www.youtube.com/embed/GZDGloqnL0w?si=3U6FagwlocFSV8zd" title="Como Identificar Nuestros Sesgos" />
                         <SeleccionMultiple
                             pregunta="Identifique cuáles son sesgos."
                             opciones={[
