@@ -17,7 +17,7 @@ import img_4_6_1 from '../assets/img_4_6_1.jpg'
 function Overview() {
     return (
         <>
-            <h3><strong>Duracion Total:</strong> 10 Horas</h3>
+            <h3><strong>Duracion Total:</strong> 2 Horas</h3>
             <h3><strong>Objetivo del Módulo </strong></h3>
             <p>
                 Al finalizar este módulo, las personas trabajadoras comprenderán la importancia de las buenas prácticas laborales y la inclusión organizacional, identificando acciones que promuevan ambientes de trabajo respetuosos, equitativos, diversos y orientados al bienestar de todos los colaboradores.
@@ -42,8 +42,8 @@ function Unidad1() {
                 <h1 className="text-2xl mb-4 mt-4">
                     <strong>1.1 ¿Qué es la selección inclusiva? </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <img></img>
+                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7 pb-4">
+
                     <p>
                         La selección inclusiva consiste en garantizar que todas las personas tengan las mismas oportunidades de acceder a un empleo, sin importar su sexo, edad, discapacidad, etnia, nacionalidad, orientación sexual, identidad de género o condición social.
                     </p>
@@ -52,7 +52,14 @@ function Unidad1() {
                     </p>
                 </div>
 
-
+                <h2 className="text-lg mb-4 pl-4">
+                    <strong>¿Cómo funciona un proceso de selección inclusivo desde el inicio?</strong>
+                </h2>
+                <div className='pl-8 pb-4' >
+                    <p >
+                        La selección inclusiva comienza mucho antes de la entrevista: inicia desde la redacción de la oferta laboral. Un anuncio inclusivo describe únicamente las funciones, conocimientos técnicos y competencias necesarias para el cargo, evitando solicitar fotografías en la hoja de vida, rangos de edad arbitrarios o especificar un sexo determinado. Además, garantiza que el proceso sea accesible para todas las personas, incluyendo candidatos con discapacidad o pertenecientes a grupos históricamente excluidos.
+                    </p>
+                </div>
             </section>
 
             {/* ---------- 1.2 ---------- */}
@@ -73,17 +80,29 @@ function Unidad1() {
                             <li>❌ Religión.</li>
                             <li>❌ Orientación sexual.</li>
                             <li>❌ Edad (cuando no sea un requisito legal).</li>
-                        </ul>
-                    </div>
-
-                    <h3 className="text-lg pt-2">
-                        <strong>En cambio: </strong>
-                    </h3>
-                    <div className="pl-4">
-                        <ul className="pl-4 space-y-1">
                             <li>✅ Deben evaluar experiencia, conocimientos y competencias.</li>
                         </ul>
                     </div>
+
+                    <h2 className="text-lg mb-4 pl-2">
+                        <strong>Normativa ecuatoriana sobre contratación sin discriminación
+                        </strong>
+                    </h2>
+                    <div className='pl-8 pb-4' >
+                        <p >
+                            En el Ecuador, el <strong>Acuerdo Ministerial Nro. MDT-2017-082 </strong> (Normativa para la <em>Erradicación de la Discriminación en el Ámbito Laboral </em>) prohíbe expresamente a todos los empleadores del sector público y privado:
+                        </p>
+                        <div className="pl-8 space-y-1">
+                            <ul className='list-disc'>
+                                <li>Exigir pruebas de embarazo como requisito para contratar o renovar un contrato. </li>
+                                <li>Solicitar pruebas de detección de VIH/SIDA. </li>
+                                <li>Exigir certificados de antecedentes penales (récord policial), salvo en las excepciones estrictamente permitidas por la ley. </li>
+                                <li>Condicionar la contratación a la apariencia física, estado civil, número de hijos o afiliación política o religiosa. Asi mismo, la <strong>Ley Orgánica de Discapacidades </strong> dispone que toda empresa con 25 o más trabajadores debe incorporar al menos un 4% de personas con discapacidad (o sustitutos directos), garantizando procesos de entrevista accesibles y ajustes razonables desde el primer día.</li>
+
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
@@ -101,6 +120,15 @@ function Unidad1() {
                         <li>Mejor clima laboral.</li>
                         <li>Cumplimiento legal.</li>
                     </ul>
+                    <h2 className="text-lg mb-4 pl-2">
+                        <strong>Ampliación de la reserva de talento y reducción de rotación
+                        </strong>
+                    </h2>
+                    <div className='pl-8 pb-4' >
+                        <p >
+                            Cuando una empresa elimina filtros discriminatorios, amplía significativamente su base de candidatos calificados, permitiéndole encontrar talento valioso que otras organizaciones pasan por alto. Además, los colaboradores que ingresan a una empresa que valora sus competencias por encima de cualquier prejuicio desarrollan un mayor sentido de pertenencia, compromiso y permanencia a largo plazo.
+                        </p>
+                    </div>
                 </div>
 
             </section>
@@ -137,18 +165,27 @@ function Unidad1() {
                     <p>
                         La verdadera inclusión laboral no significa brindar privilegios, sino garantizar igualdad de oportunidades para demostrar competencias y aportar valor a la organización.
                     </p>
-                    <p>
-                        <a
-                            href="https://www.youtube.com/watch?v=QENxnvdouB8&t=10s"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="underline text-blue-700"
-                        >
-                            UN DÍA NORMAL - Inserción laboral, discapacidad y sus tópicos
-                        </a>
-                    </p>
+
 
                     <VideoBase src="https://drive.google.com/file/d/1qJOMkEl7jfanOpVSc2U_OpY3uy1FuWuY/preview" title="UN DÍA NORMAL - Inserción laboral, discapacidad y sus tópicos" />
+                </div>
+            </section>
+
+            {/* Reflexion */}
+            <section className='mb-12'>
+                <h1 className='text-2xl pb-2'>
+                    <strong>
+                        Actividad Práctica de Reflexión
+                    </strong>
+                </h1>
+                <div className='pl-6 space-y-2'>
+                    <p>
+                        Tras observar el video "Un día normal", reflexione sobre las siguientes preguntas aplicadas a su entorno laboral:
+                    </p>
+                    <ul className='pl-8 list-decimal pt-2 space-y-2'>
+                        <li>¿Qué barreras físicas o de comunicación suelen enfrentar las personas con discapacidad durante una entrevista de trabajo tradicional y cómo podrían eliminarse? </li>
+                        <li>evise mentalmente los requisitos de su propio puesto de trabajo: ¿son todos indispensables para cumplir las funciones, o existe alguno que podría excluir innecesariamente a una persona calificada? </li>
+                    </ul>
                 </div>
             </section>
         </>
@@ -181,6 +218,12 @@ function Unidad2() {
                             <li>Experiencia.</li>
                         </ul>
                     </div>
+                    <h2 className="text-lg mb-4">
+                        <strong>Respaldo constitucional y legal en el Ecuador</strong>
+                    </h2>
+                    <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                        En el Ecuador, el <strong>Artículo 331 de la Constitución </strong>garantiza la igualdad de oportunidades en la formación y promoción laboral y profesional. Esto significa que ninguna empresa puede reservar los planes de carrera, becas o ascensos únicamente para un grupo determinado ni excluir a mujeres embarazadas, madres en período de lactancia, personas con discapacidad o trabajadores mayores de 40 años. El crecimiento dentro de la organización debe ser un camino abierto para toda persona que demuestre capacidad y compromiso.
+                    </div>
                 </div>
             </section>
 
@@ -190,7 +233,7 @@ function Unidad2() {
                     <strong>2.2 Capacitación continua </strong>
                 </h1>
                 <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <img></img>
+
                     <p>La formación permanente permite que los trabajadores:</p>
                     <ul className="list-disc pl-6 space-y-1">
                         <li>Mejoren sus competencias.</li>
@@ -198,6 +241,12 @@ function Unidad2() {
                         <li>Incrementen su productividad.</li>
                         <li>Accedan a mejores oportunidades laborales.</li>
                     </ul>
+
+                    <h2 className="text-lg mb-4">
+                        <strong>El deber de capacitación en la normativa ecuatoriana</strong>
+                    </h2>
+                    <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                        De acuerdo con el Código del Trabajo y el <strong>Acuerdo Ministerial Nro. MDT-2025-006</strong>, la capacitación continua no solo fortalece las habilidades técnicas de cada trabajador, sino que también promueve el desarrollo humano, la igualdad de género y la prevención de riesgos. Para garantizar un acceso verdaderamente igualitario, las organizaciones deben programar las capacitaciones dentro de la jornada laboral (o con facilidades reales de horario) para que quienes tienen responsabilidades familiares puedan participar en igualdad de condiciones.</div>
                 </div>
             </section>
 
@@ -218,6 +267,21 @@ function Unidad2() {
                     <p>
                         <strong>No</strong> en favoritismos o preferencias personales.
                     </p>
+                    <h2 className="text-lg mb-4">
+                        <strong>¿Cómo se garantiza un proceso de ascenso justo?</strong>
+                    </h2>
+                    <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                        <p>
+                            Para evitar que los sesgos inconscientes o las afinidades personales influyan en una promoción, las empresas aplican buenas prácticas como: publicar internamente todas las vacantes de ascenso, establecer perfiles claros con requisitos medibles, realizar evaluaciones de desempeño periódicas con indicadores objetivos y brindar retroalimentación constructiva a quienes postulan, explicando qué habilidades deben fortalecer para futuras oportunidades.
+                        </p>
+                    </div>
+                    <h2 className="text-lg mb-4">
+                        <strong>Ejemplo práctico </strong>
+                    </h2>
+                    <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                        <p>
+                            En una empresa comercial se abre una vacante para Coordinador de Ventas. Postulan dos colaboradores: Elena, quien ha superado el 110% de sus metas durante dos años consecutivos y ha capacitado a compañeros nuevos, y Roberto, quien tiene menor cumplimiento de metas, pero comparte actividades deportivas con el gerente de área. Si la empresa aplica la promoción basada en el mérito, seleccionará a Elena por sus resultados objetivos y liderazgo demostrado, fortaleciendo la confianza de todo el equipo. </p>
+                    </div>
                 </div>
             </section>
 
@@ -227,16 +291,6 @@ function Unidad2() {
                     <strong>🎥 Video: Igualdad de Oportunidades </strong>
                 </h1>
                 <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <p>
-                        <a
-                            href="https://www.youtube.com/watch?v=JBO4jVh2MGA"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="underline text-blue-700"
-                        >
-                            Igualdad de Oportunidades
-                        </a>
-                    </p>
 
                     <VideoBase src="https://drive.google.com/file/d/1G2Z4a81YBSV6w1PHQelISXemTXYZ_uM_/preview" title="Igualdad de Oportunidades" />
                 </div>
@@ -270,7 +324,6 @@ function Unidad3() {
                     <strong>3.1 ¿Qué es la diversidad? </strong>
                 </h1>
                 <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <img></img>
                     <p>
                         La diversidad reconoce que las personas son diferentes y que esas diferencias aportan valor a la organización.
                     </p>
@@ -289,6 +342,12 @@ function Unidad3() {
                             <li>Experiencia laboral.</li>
                         </ul>
                     </div>
+                    <h3 className='text-lg'><strong>La riqueza de la diversidad en el Ecuador</strong></h3>
+                    <div className='pl-6 space-y-2'>
+                        <p>
+                            Ecuador es un país constitucionalmente reconocido como intercultural y plurinacional (Art. 1 de la Constitución). En nuestros centros de trabajo conviven personas de distintas regiones (Costa, Sierra, Amazonía y Galápagos), pueblos y nacionalidades indígenas, afroecuatorianas y montubias, personas con discapacidad, trabajadores jóvenes y adultos mayores. Esta diversidad de orígenes, conocimientos y vivencias es una ventaja estratégica cuando se gestiona con respeto.
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -298,13 +357,24 @@ function Unidad3() {
                     <strong>3.2 ¿Qué es la inclusión? </strong>
                 </h1>
                 <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <img></img>
                     <p>
                         La inclusión implica crear un entorno donde todas las personas sean respetadas, escuchadas y tengan las mismas oportunidades de participación.
                     </p>
                     <p>
                         No basta con contratar personas diversas; es necesario que se sientan valoradas e integradas.
                     </p>
+                </div>
+                <h3 className='text-lg mt-2 mb-2'><strong>La diferencia práctica: Diversidad vs. Inclusión </strong></h3>
+                <div className='pl-6 '>
+                    <ul className='list-disc space-y-2'>
+                        <li>
+                            <strong>Diversidad</strong> es "invitar a todas las personas a la reunión" (que exista representación variada en la plantilla de la empresa).
+                        </li>
+                        <li>
+                            <strong>Inclusión</strong> es "darles voz real en la reunión" (que sus ideas sean escuchadas, respetadas y tomadas en cuenta para tomar decisiones, sin barreras físicas, tecnológicas ni culturales).
+                            De nada sirve cumplir con una cuota de contratación si las personas recién integradas son aisladas o excluidas de los proyectos importantes.
+                        </li>
+                    </ul>
                 </div>
             </section>
 
@@ -324,6 +394,7 @@ function Unidad3() {
                         <li>✅ Mejor reputación empresarial.</li>
                     </ul>
                 </div>
+
             </section>
 
             {/* ---------- 3.4 ---------- */}
@@ -341,6 +412,12 @@ function Unidad3() {
                         <li>✅ Evitar estereotipos y prejuicios. </li>
                     </ul>
                 </div>
+                <h3 className='text-lg mt-2 mb-2'><strong>Ejemplo práctico de inclusión cotidiana</strong></h3>
+                <div className='pl-6 '>
+                    <p>
+                        En un equipo de proyecto participa Mateo, un colaborador con discapacidad visual que utiliza un lector de pantalla en su computadora, y Sofía, una compañera recién trasladada desde otra provincia. El líder del equipo se asegura de enviar todos los documentos de las reuniones en formato digital accesible (evitando imágenes sin texto) y fomenta que todos opinen por turnos sin interrupciones ni burlas sobre el acento o forma de hablar de nadie. De este modo, ambos colaboradores aportan todo su talento en igualdad de condiciones.
+                    </p>
+                </div>
             </section>
             {/* ---------- Video ---------- */}
             <section className="mb-12">
@@ -348,16 +425,7 @@ function Unidad3() {
                     <strong>🎥 Video: Comprender qué es la diversidad </strong>
                 </h1>
                 <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <p>
-                        <a
-                            href="https://www.youtube.com/watch?v=MW7irgh7A4Q"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="underline text-blue-700"
-                        >
-                            Gestión de talento y la diversidad
-                        </a>
-                    </p>
+
                     <VideoBase src="https://drive.google.com/file/d/1GyFCL62a0B4jeiWHpAefg4uzN4Jz-Mw0/preview" title="Gestión de talento y la diversidad" />
                 </div>
             </section>
@@ -374,10 +442,17 @@ function Unidad4() {
                 <h1 className="text-2xl mb-4 mt-4">
                     <strong>4.1 Bienestar laboral </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <img></img>
+                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7 pb-2">
+
                     <p>
                         El bienestar laboral comprende las acciones que buscan mejorar la salud física, emocional y social de los trabajadores.
+                    </p>
+                </div>
+                <h2 className='text-lg pl-4'><strong>Respaldo constitucional en el Ecuador</strong></h2>
+                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+
+                    <p>
+                        En el Ecuador, el <strong>Artículo 326 (numeral 5) de la Constitución </strong>establece que toda persona tendrá derecho a desarrollar sus labores en un ambiente adecuado y propicio, que garantice su salud, integridad, seguridad, higiene y bienestar. Esto significa que la calidad de vida en el trabajo no es un simple beneficio opcional de la empresa, sino una garantía constitucional que busca proteger integralmente al ser humano durante toda su jornada.
                     </p>
                 </div>
             </section>
@@ -387,7 +462,7 @@ function Unidad4() {
                 <h1 className="text-2xl mb-4">
                     <strong>4.2 Factores que mejoran el bienestar </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7 pb-2">
                     <img></img>
                     <ul className="list-disc pl-6 space-y-1">
                         <li>Ambientes seguros.</li>
@@ -397,6 +472,13 @@ function Unidad4() {
                         <li>Equilibrio entre vida personal y trabajo.</li>
                     </ul>
                 </div>
+                <h2 className='text-lg pl-4'><strong>El derecho a la desconexión digital y el equilibrio personal</strong></h2>
+                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+
+                    <p>
+                        En la legislación laboral ecuatoriana se reconoce el <strong>derecho a la desconexión </strong> (de al menos 12 horas continuas en un período de 24 horas), lo que implica que, una vez concluida la jornada laboral, usted tiene derecho a no responder correos electrónicos, mensajes de texto o llamadas de trabajo, salvo situaciones de emergencia debidamente justificadas. Respetar los horarios familiares y de descanso es clave para evitar el agotamiento físico y mental.
+                    </p>
+                </div>
             </section>
 
             {/* ---------- 4.3 ---------- */}
@@ -404,7 +486,7 @@ function Unidad4() {
                 <h1 className="text-2xl mb-4">
                     <strong>4.3 Salud mental en el trabajo </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7 pb-2">
                     <img></img>
                     <p>La salud mental es fundamental para:</p>
                     <ul className="list-disc pl-6 space-y-1">
@@ -414,6 +496,13 @@ function Unidad4() {
                         <li>Prevenir conflictos.</li>
                     </ul>
                 </div>
+                <h2 className='text-lg pl-4'><strong>Prevención de riesgos psicosociales en el Ecuador</strong></h2>
+                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+
+                    <p>
+                        De acuerdo con las normativas del Ministerio del Trabajo (Acuerdo Ministerial Nro. MDT-2017-082), todas las organizaciones en el Ecuador deben implementar programas de prevención de <strong>riesgos psicosociales </strong> para evitar el estrés laboral crónico, la sobrecarga de trabajo y el desgaste emocional (<em>síndrome de burnout</em>). Cuidar la salud mental en el trabajo es tan importante como usar casco o equipos de protección física.
+                    </p>
+                </div>
             </section>
 
             {/* ---------- 4.4 ---------- */}
@@ -421,7 +510,7 @@ function Unidad4() {
                 <h1 className="text-2xl mb-4">
                     <strong>4.4 Buenas prácticas para promover el bienestar </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7 pb-2">
 
                     <ul className="pl-4 space-y-1">
                         <li>✅ Comunicación respetuosa. </li>
@@ -434,6 +523,13 @@ function Unidad4() {
                         </li>
                     </ul>
                 </div>
+                <h2 className='text-lg pl-4'><strong>Ejemplo práctico</strong></h2>
+                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+
+                    <p>
+                        En el área administrativa de una empresa, la jefatura implementa reuniones semanales breves para distribuir de forma equilibrada las cargas de trabajo, felicita públicamente los logros alcanzados por el equipo y respeta estrictamente el horario de salida y la hora de almuerzo sin interrupciones. Como resultado, disminuye el estrés diario, mejora la comunicación entre compañeros y aumenta la calidad del servicio ofrecido.
+                    </p>
+                </div>
             </section>
 
             {/* ---------- Video ---------- */}
@@ -442,16 +538,6 @@ function Unidad4() {
                     <strong>🎥 Video: La importancia del bienestar laboral </strong>
                 </h1>
                 <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <p>
-                        <a
-                            href="https://www.youtube.com/watch?v=g4DZfPOEIKk"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="underline text-blue-700"
-                        >
-                            Salud Laboral — El bienestar de tus empleados determina la productividad de tu empresa
-                        </a>
-                    </p>
 
                     <VideoBase src="https://drive.google.com/file/d/1i_bP_e6-H1LWMYQDVuV_cub6xWOxZoUV/preview" title="Salud Laboral — El bienestar de tus empleados determina la productividad de tu empresa" />
                 </div>
@@ -490,24 +576,44 @@ function Unidad5() {
                 <h1 className="text-2xl mb-4 mt-4">
                     <strong>5.1 Equilibrio vida-trabajo </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7 pb-2">
                     <img></img>
                     <p>
                         El equilibrio entre la vida laboral y familiar permite que las personas cumplan adecuadamente sus responsabilidades personales y profesionales.
                     </p>
                 </div>
+                <h2 className="text-lg mb-4 pl-2">
+                    <strong>¿Qué ocurre cuando no existe equilibrio entre el trabajo y la vida personal? </strong>
+                </h2>
+                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                    Cuando las exigencias laborales invaden constantemente el tiempo de descanso y de familia, se produce un desgaste físico y emocional que afecta todas las áreas de la vida. Muchas personas sienten culpa por no dedicar tiempo suficiente a sus hijos o familiares, y al mismo tiempo sienten presión por responder mensajes o tareas fuera de horario. Lograr una verdadera conciliación no significa trabajar menos ni descuidar las metas de la empresa, sino <strong>organizar el tiempo de manera inteligente </strong> y respetar los límites entre la jornada laboral y la vida privada.
+                </div>
             </section>
+
 
             {/* ---------- 5.2 ---------- */}
             <section className="mb-12">
                 <h1 className="text-2xl mb-4">
                     <strong>5.2 Corresponsabilidad familiar </strong>
                 </h1>
-                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7 pb-4">
                     <img></img>
                     <p>
                         La corresponsabilidad implica distribuir equitativamente las tareas del hogar y el cuidado familiar.
                     </p>
+                </div>
+
+                <h2 className="text-lg mb-4 pl-2">
+                    <strong> Respaldo constitucional en el Ecuador (Artículo 333)</strong>
+                </h2>
+                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <p>
+                        La Constitución de la República del Ecuador reconoce en su <strong>Artículo 333</strong> como labor productiva el trabajo no remunerado de autosustento y cuidado humano que se realiza en los hogares. Asimismo, ordena que el régimen laboral funcione en armonía con las necesidades del cuidado humano, facilitando horarios adecuados y servicios de apoyo, e impulsando la corresponsabilidad y reciprocidad entre hombres y mujeres en el trabajo doméstico y las obligaciones familiares. De "ayudar en casa" a "compartir responsabilidades"
+                    </p>
+                    <p>
+                        La corresponsabilidad rompe con la idea tradicional de que el hombre simplemente "ayuda" a la mujer con los hijos o el hogar. Tanto el padre como la madre tienen exactamente el mismo deber y derecho de cuidar, educar, asistir a reuniones escolares, llevar a controles médicos y administrar las tareas domésticas. Cuando ambos comparten estas responsabilidades, las mujeres tienen mayores oportunidades reales de crecer profesionalmente y los hombres fortalecen su vínculo afectivo con sus hijos.
+                    </p>
+
                 </div>
             </section>
 
@@ -524,6 +630,15 @@ function Unidad5() {
                         <li>Mejor clima organizacional.</li>
                         <li>Mayor productividad.</li>
                     </ul>
+                    <h2 className="text-lg mb-4">
+                        <strong> ¿Cómo gana la empresa cuando apoya la conciliación? </strong>
+                    </h2>
+                    <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                        <ul className='list-disc'>
+                            <li><strong>Reducción del ausentismo y rotación: </strong> Los colaboradores que cuentan con comprensión y flexibilidad ante emergencias familiares o citas médicas faltan menos y permanecen más tiempo en la organización. </li>
+                            <li><strong>Mayor enfoque durante la jornada:</strong> Una persona que sabe que su familia está atendida y que su horario de salida será respetado trabaja con mayor concentración y eficiencia durante sus 8 horas laborales. </li>
+                        </ul>
+                    </div>
                     <h2 className="text-lg"><strong>Ejemplos de concilación</strong></h2>
                     <ul className="pl-4 space-y-1">
                         <li>✅ Organización adecuada del tiempo. </li>
@@ -534,25 +649,44 @@ function Unidad5() {
 
                     </ul>
 
+                    <h2 className="text-lg mb-4">
+                        <strong> Herramientas legales que facilitan la conciliación en el Ecuador</strong>
+                    </h2>
+                    <p>
+                        La legislación laboral ecuatoriana contempla diversos mecanismos que permiten armonizar el trabajo con la vida familiar:
+                    </p>
+                    <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                        <ul className='list-disc'>
+                            <li><strong>Licencias remuneradas: </strong> Licencia por maternidad (12 semanas), licencia por paternidad (15 días), permiso por adopción (15 días) y licencia de hasta 25 días para el cuidado de hijos hospitalizados o con patologías degenerativas. </li>
+                            <li><strong>Período de lactancia:</strong>Jornada reducida a 6 horas diarias durante los 15 meses posteriores al parto. </li>
+                            <li><strong>Derecho a la desconexión digital:</strong> Garantía de descanso efectivo de al menos 12 horas continuas fuera de la jornada laboral, sin obligación de responder mensajes o correos de trabajo. </li>
+                            <li><strong>Teletrabajo y horarios flexibles: </strong> Modalidades permitidas por el Código del Trabajo cuando la naturaleza del cargo lo permite, facilitando el ahorro de tiempo en traslados. </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
+            {/* Reflexion */}
+            <section className="mb-12">
+                <h1 className='text-xl'>
+                    <strong>Caso práctico de reflexión</strong>
+                </h1>
+                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <p>
+                        Carlos y Andrea trabajan en la misma empresa. Ambos tienen un hijo en edad escolar que necesita acudir a una consulta médica programada en horario de la mañana. Tradicionalmente, Andrea siempre pedía permiso para llevarlo, afectando la percepción de su disponibilidad en su área. Esta vez, aplicando la corresponsabilidad familiar, Carlos solicita el permiso médico correspondiente en su departamento para acompañar a su hijo, mientras Andrea cumple una reunión importante en su oficina.
+                    </p>
+                    <p>
+                        <strong>Análisis: </strong> La corresponsabilidad permite que hombres y mujeres compartan por igual el cuidado de sus hijos y equilibren sus compromisos profesionales, eliminando prejuicios y fortaleciendo el bienestar familiar y laboral.
+                    </p>
+                </div>
+            </section>
             {/* ---------- Video ---------- */}
             <section className="mb-12">
                 <h1 className="text-2xl mb-4">
                     <strong>🎥 Video: Trabajo y familia: un equilibrio posible </strong>
                 </h1>
                 <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <p>
-                        <a
-                            href="https://www.youtube.com/watch?v=tZCwJBFESSM"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="underline text-blue-700"
-                        >
-                            Cómo encontrar el equilibrio entre el trabajo y tu vida personal
-                        </a>
-                    </p>
+
 
                     <VideoBase src="https://drive.google.com/file/d/1YimX-bfVmUFoCGqNiR3GpJVsfwE7be3x/preview" title='Cómo encontrar el equilibrio entre el trabajo y tu vida personal' />
                 </div>
@@ -567,7 +701,7 @@ function Unidad6() {
             {/* ---------- 6.1 ---------- */}
             <section className="mb-12">
                 <ImageBase src={img_4_6_1} />
-                <h1 className="text-2xl mb-4">
+                <h1 className="text-2xl mb-4 pt-4">
                     <strong>6.1 Buenas prácticas laborales </strong>
                 </h1>
                 <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
@@ -588,6 +722,16 @@ function Unidad6() {
                             <li>✅ Comunicación transparente.</li>
                         </ul>
                     </div>
+                    <h3 className='text-lg'>
+                        <strong>¿Qué diferencia a una buena práctica de una simple obligación legal?</strong>
+                    </h3>
+                    <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                        <p>
+                            Cumplir la ley (pagar el sueldo a tiempo, afiliar al IESS o respetar las vacaciones) es el piso mínimo obligatorio para cualquier empresa en el Ecuador. Las buenas prácticas laborales van un paso más allá: son acciones voluntarias, sostenidas y verificables que buscan elevar el bienestar humano, prevenir conflictos antes de que ocurran y construir un entorno donde cada persona sienta orgullo y seguridad al trabajar.
+
+
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -605,6 +749,14 @@ function Unidad6() {
                         <li>Capacitación continua.</li>
                         <li>Protocolos de prevención del acoso y la violencia.</li>
                     </ul>
+                </div>
+                <h3 className='text-lg pt-2 pl-4'>
+                    <strong>El rol del liderazgo y la corresponsabilidad de todo el equipo</strong>
+                </h3>
+                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <p>
+                        Para que una cultura organizacional inclusiva sea real y no se quede solo en un documento colgado en la pared, se requiere el ejemplo visible de la alta dirección (como exige el <strong>Acuerdo Ministerial Nro. MDT-2025-006 </strong>al disponer la participación obligatoria de los representantes legales en las capacitaciones de igualdad) y el compromiso diario de cada trabajador. Cuando líderes y colaboradores practican la coherencia entre lo que dicen y lo que hacen, el respeto se convierte en un hábito natural de la empresa.
+                    </p>
                 </div>
             </section>
 
@@ -628,6 +780,20 @@ function Unidad6() {
                             <li>Auditorías internas.</li>
                             <li>Indicadores de gestión.</li>
                             <li>Programas de capacitación.</li>
+                        </ul>
+                    </div>
+                    <h3 className='text-lg pt-2'>
+                        <strong>El rol del liderazgo y la corresponsabilidad de todo el equipo</strong>
+                    </h3>
+                    <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                        <p>
+                            El ciclo de mejora continua aplicado a la inclusión (Planificar - Hacer - Verificar - Actuar)
+                        </p>
+                        <ul className="list-disc pl-6 space-y-1">
+                            <li><strong>Planificar: </strong> Diseñar políticas claras de igualdad salarial, inclusión y prevención de riesgos psicosociales. </li>
+                            <li><strong>Hacer: </strong> Ejecutar los programas de capacitación, sensibilización y selección objetiva. </li>
+                            <li><strong>Verificar: </strong> Medir el clima laboral de forma anónima, revisar estadísticas de ascensos y auditar las escalas salariales. </li>
+                            <li><strong>Actuar: </strong>Corregir de inmediato cualquier brecha detectada y actualizar los protocolos internos. </li>
                         </ul>
                     </div>
                 </div>
@@ -654,22 +820,26 @@ function Unidad6() {
                 </div>
             </section>
 
+            <section className="mb-12">
+                <h3 className='text-2xl pt-2 pb-2'>
+                    <strong>Caso práctico de cierre </strong>
+                </h3>
+                <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
+                    <p>
+                        Una empresa ecuatoriana aplica cada año una encuesta anónima de clima laboral y realiza una auditoría interna de sueldos y ascensos. Al revisar los resultados, detecta que, aunque la mayoría del personal operativo son mujeres, casi todos los cargos de supervisión están ocupados por hombres, y que varios colaboradores desconocen cómo funciona el canal de denuncias. La empresa decide implementar un programa de formación en liderazgo abierto a todo el personal, publicar internamente todas las vacantes de ascenso y reforzar la difusión de sus protocolos de respeto e igualdad.
+                    </p>
+                    <p>
+                        <strong>Análisis: </strong> Este ejemplo demuestra cómo la mejora continua y el compromiso organizacional transforman los datos en acciones concretas para construir una empresa más justa, transparente e inclusiva.
+                    </p>
+                </div>
+            </section>
             {/* ---------- Video ---------- */}
             <section className="mb-12">
                 <h1 className="text-2xl mb-4">
                     <strong>🎥 Video: Empresas que promueven la igualdad y las buenas prácticas laborales </strong>
                 </h1>
                 <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <p>
-                        <a
-                            href="https://www.youtube.com/watch?v=7tNoaS57TX4"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="underline text-blue-700"
-                        >
-                            Igualdad de Género y Oportunidades en el Trabajo | Capacitación Laboral Ecuador 2025 SOLEC
-                        </a>
-                    </p>
+
 
                     <VideoBase src="https://drive.google.com/file/d/1hNC1Qw5wAHfaMGvbNw9crUtN_-VX_ndr/preview" title="Igualdad de Género y Oportunidades en el Trabajo | Capacitación Laboral Ecuador 2025 SOLEC" />
                 </div>
