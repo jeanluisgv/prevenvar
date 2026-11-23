@@ -808,7 +808,7 @@ function Unidad2() {
 
 
                 <h3 className="text-xl pt-2 pb-2">
-                    <strong>🎥 Video: Discriminación por la edad </strong>
+                    <strong>🎥 Video: Derechos Y Dignidad Laboral </strong>
                 </h3>
                 <div className="pl-4">
                     <VideoBase src="https://www.youtube.com/embed/p9kG062U1mw?si=V9ugpS4mMDuUgqcp" title="Discriminación por la edad" />
