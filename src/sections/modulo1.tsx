@@ -811,7 +811,7 @@ function Unidad2() {
                     <strong>🎥 Video: Discriminación por la edad </strong>
                 </h3>
                 <div className="pl-4">
-                    <VideoBase src="https://www.youtube.com/embed/H2oOuE1_8OE?si=8Hv3tkekhR26Ipjk" title="Discriminación por la edad" />
+                    <VideoBase src="https://www.youtube.com/embed/p9kG062U1mw?si=V9ugpS4mMDuUgqcp" title="Discriminación por la edad" />
                 </div>
 
             </section>
@@ -1461,17 +1461,8 @@ function Unidad4() {
                         <strong>🎥 Video: ¿Qué significa trabajo digno? </strong>
                     </h2>
                     <div className="pl-4 space-y-2">
-                        <p>
-                            <a
-                                href="https://youtu.be/TMKIB3--MsU?si=P9CRz3uXWWedq2tY"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="underline text-blue-700"
-                            >
-                                Trabajo Digno y Decente
-                            </a>
-                        </p>
-                        <VideoBase src="https://www.youtube.com/embed/TMKIB3--MsU?si=g9Q33hUQz40qgtW6" title='Trabajo Digno y Decente' />
+
+                        <VideoBase src="https://www.youtube.com/embed/1OEqB05EK9E?si=D3zY2aiQbjllbYdV" title='Trabajo Digno y Decente' />
                     </div>
                 </div>
             </section>
@@ -1657,17 +1648,8 @@ function Unidad5() {
                 </h1>
                 <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
                     <div className="pl-4 space-y-4">
-                        <p>
-                            <a
-                                href="https://www.youtube.com/watch?v=OglL6qHvZYs"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="underline text-blue-700"
-                            >
-                                Módulo 1: Derechos Laborales de Mujeres y Hombres
-                            </a>
-                        </p>
-                        <VideoBase src="https://www.youtube.com/embed/a8hEhhNLe3M?si=0W4dGef1cM5gezyO" title="Módulo 1: Derechos Laborales de Mujeres y Hombres" />
+
+                        <VideoBase src="https://www.youtube.com/embed/kuJA6MbED_4?si=bhkEop4PwjXtyd0B" title="Módulo 1: Derechos Laborales de Mujeres y Hombres" />
                     </div>
                 </div>
             </section>
@@ -1903,7 +1885,7 @@ function Unidad6() {
                         <p>
                             Permiso de paternidad y maternidad en Ecuador 2026: cuántos días son
                         </p>
-                        <VideoBase src="https://www.youtube.com/embed/ySScwrTRzkE?si=Z0jkgUPVGMCfe08A" title="Permiso de paternidad y maternidad en Ecuador 2026: cuántos días son" />
+                        <VideoBase src="https://www.youtube.com/embed/ZxxQzDo_lQM?si=p0Dt9ZoMj623SGyI" title="Permiso de paternidad y maternidad en Ecuador 2026: cuántos días son" />
                     </div>
                 </div>
             </section>

@@ -340,7 +340,7 @@ function Unidad2() {
                 <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
 
 
-                    <VideoBase src="https://drive.google.com/file/d/1h9LYdG7IfiFma6MNjCnWofjL6ouJVu_0/preview" title="IEL FINA | Corto sobre Acoso Laboral" />
+                    <VideoBase src="https://www.youtube.com/embed/tBJn6UlQom4?si=r1aigu9tNaG3beUg" title="IEL FINA | Corto sobre Acoso Laboral" />
                 </div>
             </section>
 
@@ -472,7 +472,7 @@ function Unidad3() {
                 <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
 
 
-                    <VideoBase src="https://drive.google.com/file/d/1OA0Anf0t7uQQlsuA7JjbB3dmwBDJKqm1/preview" title="¿Alguna vez viviste o escuchaste sobre una situación de violencia laboral así?" />
+                    <VideoBase src="https://www.youtube.com/embed/bSHYIlHwAVg?si=f0RONzdSCKHrJYhr" title="¿Alguna vez viviste o escuchaste sobre una situación de violencia laboral así?" />
                 </div>
             </section>
 
@@ -698,7 +698,7 @@ function Unidad4() {
                 <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
 
 
-                    <VideoBase src="https://drive.google.com/file/d/1V_xxqTz8K_budAeijaABNH_qAVyhmraM/preview" title="Discriminacion en el Trabajo" />
+                    <VideoBase src="https://www.youtube.com/embed/ve23pWGml2k?si=iOrZXu58elqSDoeS" title="Discriminacion en el Trabajo" />
                 </div>
             </section>
         </>

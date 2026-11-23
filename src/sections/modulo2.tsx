@@ -332,7 +332,7 @@ function Unidad2() {
                 </h1>
                 <div className="pl-4 border-l-4 border-gray-200 space-y-4 leading-7">
                     <div className="pl-4">
-                        <VideoBase src="https://www.youtube.com/embed/74LLMXsPR78?si=ymsSB378909gEPwR" title="Igualdad de Género" />
+                        <VideoBase src="https://www.youtube.com/embed/DzlkOqfyNk0?si=xSa6U51aufTY6cJD" title="Igualdad de Género" />
                     </div>
                 </div>
             </section>
