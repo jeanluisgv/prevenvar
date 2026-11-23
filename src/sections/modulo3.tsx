@@ -660,7 +660,7 @@ function Unidad4() {
                     <strong>4.5 Inclusión y Ajustes Razonables </strong>
                 </h1>
                 <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <img></img>
+
                     <p>
                         La inclusión laboral no significa tratar a todas las personas exactamente de la misma manera, sino eliminar barreras para que todas puedan desarrollar su trabajo en igualdad de condiciones.
                     </p>
@@ -676,17 +676,7 @@ function Unidad4() {
                             <li>✅ Horarios flexibles cuando corresponda legalmente.</li>
                         </ul>
                     </div>
-                    <h3 className='text-lg'>
-                        <strong>
-                            Inclusión laboral de personas con discapacidad en Ecuador
-                        </strong>
-                    </h3>
-                    <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                        <p>
-                            De acuerdo con la Ley Orgánica de Discapacidades y el Código del Trabajo del Ecuador, toda empresa o institución pública o privada que cuente con <strong>25 o más trabajadores </strong> está obligada a contratar un mínimo del <strong>4% de personas con discapacidad </strong>(o sustitutos directos), en labores apropiadas a sus conocimientos y capacidades, garantizando los ajustes razonables en su puesto de trabajo y un ambiente libre de barreras físicas o actitudinales.
-                        </p>
 
-                    </div>
                 </div>
             </section>
 

@@ -97,7 +97,7 @@ function Unidad1() {
                                 <li>Exigir pruebas de embarazo como requisito para contratar o renovar un contrato. </li>
                                 <li>Solicitar pruebas de detección de VIH/SIDA. </li>
                                 <li>Exigir certificados de antecedentes penales (récord policial), salvo en las excepciones estrictamente permitidas por la ley. </li>
-                                <li>Condicionar la contratación a la apariencia física, estado civil, número de hijos o afiliación política o religiosa. Asi mismo, la <strong>Ley Orgánica de Discapacidades </strong> dispone que toda empresa con 25 o más trabajadores debe incorporar al menos un 4% de personas con discapacidad (o sustitutos directos), garantizando procesos de entrevista accesibles y ajustes razonables desde el primer día.</li>
+                                <li>Condicionar la contratación a la apariencia física, estado civil, número de hijos o afiliación política o religiosa. </li>
 
                             </ul>
                         </div>
