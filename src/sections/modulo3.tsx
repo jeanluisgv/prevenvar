@@ -211,7 +211,7 @@ function Unidad1() {
                 </h1>
                 <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
 
-                    <VideoBase src="https://drive.google.com/file/d/1R6f8RFkh76V_tR4Ovwby8lmb5CHA6uJ2/preview" title="Violencias en el lugar de trabajo" />
+                    <VideoBase src="https://www.youtube.com/embed/9wZYLb94WVU?si=RKekxmoJ3H2Nnqza" title="Violencias en el lugar de trabajo" />
                 </div>
             </section>
         </>
@@ -827,7 +827,7 @@ function Unidad5() {
                 <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
 
 
-                    <VideoBase src="https://drive.google.com/file/d/1XApaHGPOCOkGyYgu2csyKqrE9nZ7XdXX/preview" title="Acoso laboral en Ecuador: Cómo identificarlo y qué hacer" />
+                    <VideoBase src="https://www.youtube.com/embed/CU_6j2pv4so?si=9QWrwEb3vx5_q1zk" title="Acoso laboral en Ecuador: Cómo identificarlo y qué hacer" />
                 </div>
             </section>
 
@@ -1007,18 +1007,9 @@ function Unidad6() {
                     <strong>🎥 Video: Construyendo un ambiente saludable </strong>
                 </h1>
                 <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
-                    <p>
-                        <a
-                            href="https://www.youtube.com/watch?v=WIOhCNzxtGs"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="underline text-blue-700"
-                        >
-                            Convivencia laboral: tips e ideas para una mejor experiencia en el trabajo
-                        </a>
-                    </p>
 
-                    <VideoBase src="https://drive.google.com/file/d/1MuJj7fSMkp9aHJZgEGU8t5ECHfmymEjX/preview" title="Convivencia laboral: tips e ideas para una mejor experiencia en el trabajo" />
+
+                    <VideoBase src="https://www.youtube.com/embed/Mpo102s4g-o?si=mViBlbsqG0tnYJPj" title="Convivencia laboral: tips e ideas para una mejor experiencia en el trabajo" />
                 </div>
             </section>
 
