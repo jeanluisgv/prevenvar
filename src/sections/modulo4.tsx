@@ -167,7 +167,7 @@ function Unidad1() {
                     </p>
 
 
-                    <VideoBase src="https://drive.google.com/file/d/1qJOMkEl7jfanOpVSc2U_OpY3uy1FuWuY/preview" title="UN DÍA NORMAL - Inserción laboral, discapacidad y sus tópicos" />
+                    <VideoBase src="https://www.youtube.com/embed/DhL6W_qTLNU?si=4Tzd5BLI-us_bBZd" title="UN DÍA NORMAL - Inserción laboral, discapacidad y sus tópicos" />
                 </div>
             </section>
 
@@ -292,7 +292,7 @@ function Unidad2() {
                 </h1>
                 <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
 
-                    <VideoBase src="https://drive.google.com/file/d/1G2Z4a81YBSV6w1PHQelISXemTXYZ_uM_/preview" title="Igualdad de Oportunidades" />
+                    <VideoBase src="https://www.youtube.com/embed/pxkgOSpO0n8?si=0GtTsaTJoNu5LGZD" title="Igualdad de Oportunidades" />
                 </div>
             </section>
 
@@ -426,7 +426,7 @@ function Unidad3() {
                 </h1>
                 <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
 
-                    <VideoBase src="https://drive.google.com/file/d/1GyFCL62a0B4jeiWHpAefg4uzN4Jz-Mw0/preview" title="Gestión de talento y la diversidad" />
+                    <VideoBase src="https://www.youtube.com/embed/KQA_7X96Zh4?si=ZZjrqfhkAB24sCMT" title="Gestión de talento y la diversidad" />
                 </div>
             </section>
         </>
@@ -539,7 +539,7 @@ function Unidad4() {
                 </h1>
                 <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
 
-                    <VideoBase src="https://drive.google.com/file/d/1i_bP_e6-H1LWMYQDVuV_cub6xWOxZoUV/preview" title="Salud Laboral — El bienestar de tus empleados determina la productividad de tu empresa" />
+                    <VideoBase src="https://www.youtube.com/embed/nLoUMO7zKAc?si=8lRttFCfa7mRMP1q" title="Salud Laboral — El bienestar de tus empleados determina la productividad de tu empresa" />
                 </div>
             </section>
 
@@ -688,7 +688,7 @@ function Unidad5() {
                 <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
 
 
-                    <VideoBase src="https://drive.google.com/file/d/1YimX-bfVmUFoCGqNiR3GpJVsfwE7be3x/preview" title='Cómo encontrar el equilibrio entre el trabajo y tu vida personal' />
+                    <VideoBase src="https://www.youtube.com/embed/rO8F5NS0dw4?si=2zptBrblTeqdvru6" title='Cómo encontrar el equilibrio entre el trabajo y tu vida personal' />
                 </div>
             </section>
         </>
@@ -841,7 +841,7 @@ function Unidad6() {
                 <div className="pl-6 border-l-4 border-gray-200 space-y-4 leading-7">
 
 
-                    <VideoBase src="https://drive.google.com/file/d/1hNC1Qw5wAHfaMGvbNw9crUtN_-VX_ndr/preview" title="Igualdad de Género y Oportunidades en el Trabajo | Capacitación Laboral Ecuador 2025 SOLEC" />
+                    <VideoBase src="https://www.youtube.com/embed/tEtPYqbwRmA?si=JtiH5cUtmH_0p-Em" title="Igualdad de Género y Oportunidades en el Trabajo | Capacitación Laboral Ecuador 2025 SOLEC" />
                 </div>
             </section>
         </>

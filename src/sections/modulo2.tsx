@@ -1133,7 +1133,7 @@ function Unidad6() {
                         <strong>🎥 Video: Desafío de la Igualdad </strong>
                     </h2>
                     <div className="pl-4">
-                        <VideoBase src="https://drive.google.com/file/d/1MZSI710KVUtpssFMuPy-EkUDz_Gzsi21/preview" title="Igualdad en las empresas. Barreras y sesgos de género en el ámbito laboral" />
+                        <VideoBase src="https://www.youtube.com/embed/I-rHhbnfNMc?si=C1yRlloJNuKjo1Oy" title="Igualdad en las empresas. Barreras y sesgos de género en el ámbito laboral" />
                     </div>
                 </div>
             </section>
