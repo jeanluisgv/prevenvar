@@ -18,7 +18,8 @@ async function readCredentials(request: Request) {
     }
     const email = typeof body.email === 'string' ? body.email.trim().toLowerCase() : ''
     const password = typeof body.password === 'string' ? body.password : ''
-    const codigo = typeof body.codigo === 'string' ? body.codigo.trim() : ''
+    // Codes are case-insensitive, so they're always stored and compared in lowercase.
+    const codigo = typeof body.codigo === 'string' ? body.codigo.trim().toLowerCase() : ''
     const firstName = typeof body.firstName === 'string' ? body.firstName.trim() : ''
     const lastName = typeof body.lastName === 'string' ? body.lastName.trim() : ''
     return { email, password, codigo, firstName, lastName }
