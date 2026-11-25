@@ -276,7 +276,7 @@ const modulo5: Section = {
             }
         },
         {
-            id: 'mensajesFinales',
+            id: 'mensajes-finales',
             title: 'Finalizacion del Curso',
             waitSeconds: 0,
             Content: FinalizacionCurso
