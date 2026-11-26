@@ -10,8 +10,8 @@ import certificadoUrl from '../assets/certificado.png'
 import { useProgress } from '../progress'
 
 const LAYOUT = {
-    name: { x: 1754, y: 750, font: 'bold 140px Georgia, serif', color: '#1f2937', align: 'center' as CanvasTextAlign },
-    date: { x: 1975, y: 1570, font: '60px Georgia, serif', color: '#1f2937', align: 'center' as CanvasTextAlign },
+    name: { x: 960, y: 420, font: 'bold 70px Carls Sans', color: '#242424', align: 'center' as CanvasTextAlign },
+    date: { x: 1030, y: 788, font: 'bold 30px Carls Sans', color: '#242424', align: 'center' as CanvasTextAlign },
 }
 
 /** The step whose pass date goes on the certificate ("<section id>/<step id>"). */
