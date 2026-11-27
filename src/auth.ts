@@ -55,3 +55,6 @@ export function setSessionFromResponse(data: SessionResponse | null) {
 export function updateCachedProgress(progress: ProgressRow[]) {
     current = current?.then(s => (s ? { ...s, progress } : s)) ?? null
 }
+
+/** Where to go after logging in: admins choose course or dashboard first. */
+export const homePath = (s: { admin: boolean }) => (s.admin ? '/admin' : '/inicio')

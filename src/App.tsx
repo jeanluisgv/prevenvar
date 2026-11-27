@@ -9,6 +9,9 @@ import Home from '/src/Home.tsx'
 import SectionPage from '/src/pages/SectionPage.tsx'
 import SubsectionPage from '/src/pages/SubsectionPage.tsx'
 import EvaluationPage from '/src/pages/EvaluationPage.tsx'
+import AdminLayout from '/src/admin/AdminLayout.tsx'
+import AdminHome from '/src/admin/AdminHome.tsx'
+import Dashboard from '/src/admin/Dashboard.tsx'
 import { sections } from '/src/sections'
 import { isEvaluationStep, progressKey, sectionPath, sectionSteps, stepPath } from '/src/sections/types'
 
@@ -18,6 +21,12 @@ function App() {
             <Route path="/" element={<LogIn />} />
             <Route path="/register" element={<Register />} />
             <Route path="/recuperar" element={<RecuperarContrasena />} />
+
+            {/* Admins only: choose course or dashboard, and the dashboard itself. */}
+            <Route element={<AdminLayout />}>
+                <Route path="/admin" element={<AdminHome />} />
+                <Route path="/admin/datos" element={<Dashboard />} />
+            </Route>
 
             {/* Everything inside here needs a logged-in user and shows the sidebar. */}
             <Route element={<Layout />}>

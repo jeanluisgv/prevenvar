@@ -4,6 +4,7 @@ import { me, recordProgress, type ProgressRow } from './progress'
 import { validateEmail, validatePassword, validateFirstName, validateLastName, validateCodigo } from '../src/validation'
 import { recordEvaluation } from './evaluations'
 import { isAdmin } from './admin'
+import { adminData } from './adminData'
 type Credentials = {
     email?: unknown, password?: unknown, codigo?: unknown,
     firstName?: unknown, lastName?: unknown,
@@ -160,6 +161,7 @@ async function resetPassword(request: Request, env: Env) {
 //   POST /api/reset-password 2  (read by email, then update + log out in one batch); 1 on a mismatch, 0 on bad input
 //   POST /api/logout    1, or 0 without a valid-looking cookie
 //   POST /api/evaluations 1  (attempt + "done" if passed, one batch), 0 on bad input
+//   GET  /api/admin/data  1  (users + progress + evaluations, one batch; admins only), 0 without a cookie
 //   bad input / bad JSON / failed validation: 0
 export default {
     async fetch(request: Request, env: Env) {
@@ -198,6 +200,12 @@ export default {
             return recordEvaluation(request, env)
         }
 
+        if (url.pathname === '/api/admin/data' && request.method === 'GET') {
+            return adminData(request, env)
+        }
+
+        // Unknown /api routes, and the secret-file paths routed here by
+        // run_worker_first in wrangler.jsonc (/.env, /.git/config, ...).
         return new Response('Not found', { status: 404 })
     },
 }

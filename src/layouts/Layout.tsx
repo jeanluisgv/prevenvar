@@ -12,37 +12,21 @@
  * moves between pages: the sidebar keeps its open/closed state.
  */
 
-import { useEffect, useState } from 'react'
-import { Outlet, useNavigate } from 'react-router-dom'
+import { useState } from 'react'
+import { Outlet } from 'react-router-dom'
 import NavigationBar from './NavigationBar.tsx'
 import SideBar from './SideBar.tsx'
-import { getSession, setSessionFromResponse, type SessionData } from '../auth'
 import { ProgressProvider } from '../progress'
+import { useLogOut, useRequiredSession } from './useAccount'
 
 const isDesktop = () => window.matchMedia('(min-width: 768px)').matches
 
 export default function Layout() {
-    const navigate = useNavigate()
-    const [session, setSession] = useState<SessionData | null>(null)
+    const session = useRequiredSession()
+    const logOut = useLogOut()
     // Open by default on wide screens; on phones it starts closed so it
     // doesn't cover the page.
     const [sidebarOpen, setSidebarOpen] = useState(isDesktop)
-
-    useEffect(() => {
-        let cancelled = false
-        getSession().then(s => {
-            if (cancelled) return
-            if (s) setSession(s)
-            else navigate('/', { replace: true })
-        })
-        return () => { cancelled = true }
-    }, [navigate])
-
-    async function logOut() {
-        await fetch('/api/logout', { method: 'POST' }).catch(() => { })
-        setSessionFromResponse(null)
-        navigate('/', { replace: true })
-    }
 
     if (!session) return null // still checking the session
 
@@ -53,6 +37,7 @@ export default function Layout() {
                     sidebarOpen={sidebarOpen}
                     onToggleSidebar={() => setSidebarOpen(o => !o)}
                     email={session.email}
+                    admin={session.admin}
                     onLogout={logOut}
                 />
                 <div className="flex flex-1">

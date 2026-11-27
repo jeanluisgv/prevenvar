@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import logo from './assets/prevenvarLogo.png'
 import { useEffect, useState } from 'react'
 import { validateEmail, validatePassword } from './validation'
-import { getSession, setSessionFromResponse } from './auth'
+import { getSession, homePath, setSessionFromResponse } from './auth'
 
 
 function LogIn() {
@@ -17,7 +17,7 @@ function LogIn() {
 
     // Already logged in (valid session cookie)? Skip the form.
     useEffect(() => {
-        getSession().then(s => { if (s) navigate('/inicio', { replace: true }) })
+        getSession().then(s => { if (s) navigate(homePath(s), { replace: true }) })
     }, [navigate])
 
     async function handleSubmit(e: React.SyntheticEvent<HTMLFormElement>) {
@@ -42,7 +42,7 @@ function LogIn() {
             if (res.ok) {
                 const data = await res.json()
                 setSessionFromResponse(data) // so the next page doesn't have to ask /api/me
-                navigate('/inicio')
+                navigate(homePath({ admin: data.admin === true }))
             } else {
                 setErrors({ ...newErrors, form: 'Email o contraseña incorrectos.' })
             }

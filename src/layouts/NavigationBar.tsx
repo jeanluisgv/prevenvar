@@ -7,7 +7,7 @@
  */
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { Link, useLocation } from 'react-router-dom'
-import logo from '../assets/prevenvarLogo.png'
+import TopBar, { navLinkStyle } from './TopBar'
 import { sections } from '../sections'
 import { sectionPath } from '../sections/types'
 
@@ -15,6 +15,8 @@ type NavigationBarProps = {
     sidebarOpen: boolean
     onToggleSidebar: () => void
     email: string
+    /** Shows a link to the admin dashboard. */
+    admin: boolean
     onLogout: () => void
 }
 
@@ -23,15 +25,16 @@ function currentSection(pathname: string) {
     return sections.find(s => pathname === sectionPath(s) || pathname.startsWith(`${sectionPath(s)}/`)) ?? null
 }
 
-export default function NavigationBar({ sidebarOpen, onToggleSidebar, email, onLogout }: NavigationBarProps) {
+export default function NavigationBar({ sidebarOpen, onToggleSidebar, email, admin, onLogout }: NavigationBarProps) {
     const { pathname } = useLocation()
     const section = currentSection(pathname)
 
     return (
-        // Three columns: the side ones share the leftover space equally, so the
-        // logo stays exactly in the middle whatever is on the left or right.
-        <nav className="sticky top-0 z-30 h-16 grid grid-cols-[1fr_auto_1fr] items-center gap-3 px-4 border-b bg-white">
-            <div className="flex items-center gap-3 min-w-0">
+        <TopBar
+            home="/inicio"
+            email={email}
+            onLogout={onLogout}
+            left={<>
                 <button
                     type="button"
                     onClick={onToggleSidebar}
@@ -48,22 +51,9 @@ export default function NavigationBar({ sidebarOpen, onToggleSidebar, email, onL
                 >
                     {section ? section.title : 'Inicio'}
                 </Link>
-            </div>
-
-            <Link to="/inicio" aria-label="Inicio">
-                <img src={logo} alt="PREVENVAR" className="h-10 w-auto" />
-            </Link>
-
-            <div className="flex items-center justify-end gap-3 min-w-0">
-                <span className="hidden lg:block truncate text-sm text-gray-600">{email}</span>
-                <button
-                    type="button"
-                    onClick={onLogout}
-                    className="shrink-0 px-4 py-2 bg-blue-800 text-white rounded-lg hover:bg-blue-600 text-sm whitespace-nowrap"
-                >
-                    Cerrar Sesion
-                </button>
-            </div>
-        </nav>
+            </>}
+        >
+            {admin && <Link to="/admin/datos" className={navLinkStyle}>Panel</Link>}
+        </TopBar>
     )
 }

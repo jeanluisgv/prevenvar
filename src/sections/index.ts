@@ -29,7 +29,7 @@ export const sections: Section[] = [
 // Catch mistakes in the section files while developing.
 if (import.meta.env.DEV) {
     const ID = /^[a-z0-9-]{1,50}$/
-    const reserved = new Set(['inicio', 'register', 'api'])
+    const reserved = new Set(['inicio', 'register', 'recuperar', 'admin', 'api'])
     const seen = new Set<string>()
     for (const section of sections) {
         if (!ID.test(section.id)) console.error(`Section id "${section.id}" must be lowercase letters, numbers and dashes.`)

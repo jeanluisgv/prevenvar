@@ -37,9 +37,17 @@
         }
     },
     "assets": {
+        // Unknown paths get index.html (200), so links like /modulo3/... work.
         "not_found_handling": "single-page-application",
+        // These go to the worker instead. Besides /api, the paths bots probe for
+        // secrets (/.env, /.git/config, /wrangler.jsonc, ...): none of them
+        // exist, and answering 404 instead of the home page tells scanners so.
         "run_worker_first": [
-            "/api/*"
+            "/api/*",
+            "/.*",
+            "/*/.*",
+            "/wrangler.*",
+            "/package*.json"
         ]
     },
     "d1_databases": [

@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import logo from './assets/prevenvarLogo.png'
 import { useState } from 'react'
 import { validateEmail, validatePassword, validateFirstName, validateLastName, validateCodigo } from './validation'
-import { setSessionFromResponse } from './auth'
+import { homePath, setSessionFromResponse } from './auth'
 
 
 function Register() {
@@ -49,7 +49,7 @@ function Register() {
             if (res.ok) {
                 const data = await res.json()
                 setSessionFromResponse(data) // so the next page doesn't have to ask /api/me
-                navigate('/inicio')
+                navigate(homePath({ admin: data.admin === true }))
                 return
             }
             const data = await res.json().catch(() => ({}))
