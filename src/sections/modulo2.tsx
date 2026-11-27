@@ -1150,7 +1150,7 @@ const modulo2: Section = {
         {
             id: 'unidad1',
             title: 'Unidad 1: Conceptos Básicos De Género',
-            waitSeconds: 0,
+            waitSeconds: 900,
             Content: Unidad1
         },
         {
@@ -1202,7 +1202,7 @@ const modulo2: Section = {
         {
             id: 'unidad2',
             title: 'Unidad 2: Igualdad De Género',
-            waitSeconds: 0,
+            waitSeconds: 900,
             Content: Unidad2
         },
         {

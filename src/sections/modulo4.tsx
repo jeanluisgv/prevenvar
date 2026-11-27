@@ -1163,7 +1163,7 @@ const modulo4: Section = {
         {
             id: 'unidad3',
             title: 'Unidad 3: Diversidad E Inclusión Organizacional',
-            waitSeconds: 0,
+            waitSeconds: 600,
             Content: Unidad3
         },
         {
