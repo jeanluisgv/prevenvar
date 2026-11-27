@@ -1,17 +1,20 @@
 // The page for a subsection (/<section id>/<subsection id>): its content, a
-// "Done" button, the countdown until the next part unlocks, and a link to it.
+// "Done" button (locked until the subsection's minimum time has passed, with a
+// countdown), and a link to the next part.
 // The same page is used for every subsection; the content comes from the
 // section's file.
 
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { FaCheckCircle } from 'react-icons/fa'
+import { FaCheckCircle, FaLock } from 'react-icons/fa'
 import { progressKey, sectionPath, type Section, type Subsection } from '../sections/types'
 import { formatDuration, useProgress, type ItemStatus } from '../progress'
 import LockedNotice from './LockedNotice'
 import NextStepLink from './NextStepLink'
 
 const btn_style = 'px-5 py-2 bg-blue-800 text-white rounded-lg hover:bg-blue-600 disabled:opacity-50'
+// While the minimum time hasn't passed: gray, no hover, not clickable.
+const btn_locked = 'flex items-center gap-2 px-5 py-2 bg-gray-300 text-gray-600 rounded-lg cursor-not-allowed'
 
 export default function SubsectionPage({ section, sub }: { section: Section, sub: Subsection }) {
     const { byKey, start } = useProgress()
@@ -74,10 +77,22 @@ function DoneBar({ item }: { item: ItemStatus }) {
         <div className="flex flex-col gap-3 rounded-lg border-2 border-gray-300 bg-white p-4">
             {item.doneAt === null ? (
                 <div className="flex flex-wrap items-center gap-4">
-                    <button className={btn_style} type="button" onClick={onDone} disabled={saving}>
-                        Marcar como hecho
-                    </button>
-                    {waiting && <p className="text-sm text-gray-600">Tiempo mínimo restante: {formatDuration(remaining)}</p>}
+                    {waiting ? (
+                        // Can't be marked until the minimum time is up. It unlocks
+                        // by itself when the countdown reaches 0 (no reload needed).
+                        <>
+                            <button className={btn_locked} type="button" disabled aria-describedby="done-wait">
+                                <FaLock aria-hidden="true" /> Marcar como hecho
+                            </button>
+                            <p id="done-wait" className="text-sm text-gray-600">
+                                Podrás marcarlo como hecho en {formatDuration(remaining)}
+                            </p>
+                        </>
+                    ) : (
+                        <button className={btn_style} type="button" onClick={onDone} disabled={saving}>
+                            Marcar como hecho
+                        </button>
+                    )}
                 </div>
             ) : (
                 <p className="flex items-center gap-2 font-semibold text-green-700">
@@ -85,6 +100,7 @@ function DoneBar({ item }: { item: ItemStatus }) {
                 </p>
             )}
 
+            {/* Only for steps marked done before the button waited for the timer. */}
             {item.doneAt !== null && waiting && (
                 <p className="text-sm text-gray-600" aria-live="polite">
                     {next ? 'Lo siguiente' : 'El final'} se desbloquea en {formatDuration(remaining)}

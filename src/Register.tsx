@@ -77,7 +77,7 @@ function Register() {
                 <form className="flex flex-col items-center" onSubmit={handleSubmit} noValidate>
                     <div className="pt-5 pb-2 w-full">
                         <label className="flex flex-col items-center gap-2 w-full ">
-                            <p className="text-xl">Nombre</p>
+                            <p className="text-xl">Nombres</p>
                             <input
                                 className={input_style}
                                 name="first_name"
@@ -93,7 +93,7 @@ function Register() {
                     </div>
                     <div className="pt-3 pb-2 w-full">
                         <label className="flex flex-col items-center gap-2 w-full ">
-                            <p className="text-xl">Apellido</p>
+                            <p className="text-xl">Apellidos</p>
                             <input
                                 className={input_style}
                                 name="last_name"
